@@ -5,10 +5,12 @@ Page({
     logs: []
   },
   onLoad: function () {
-    this.setData({
-      logs: (wx.getStorageSync('logs') || []).map(function (log) {
-        return util.formatTime(new Date(log))
-      })
+    var me = this
+    wx.request({
+      url: 'https://kaiyuanshuwu.com/api/activities',
+      success: function (res) {
+        me.setData({ logs: res.data.data.list || [] })
+      }
     })
   }
 })
