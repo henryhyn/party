@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/activities/activities",
+    "pages/activities/activity_list",
     "pages/profile/profile"
   ],
   "window": {
@@ -12,7 +12,7 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/activities/activities",
+        "pagePath": "pages/activities/activity_list",
         "iconPath": "image/discovery.png",
         "selectedIconPath": "image/discovery_focus.png",
         "text": "活动"
