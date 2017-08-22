@@ -13,10 +13,14 @@
     "list": [
       {
         "pagePath": "pages/logs/logs",
+        "iconPath": "image/discovery.png",
+        "selectedIconPath": "image/discovery_focus.png",
         "text": "活动"
       },
       {
         "pagePath": "pages/index/index",
+        "iconPath": "image/ring.png",
+        "selectedIconPath": "image/ring_focus.png",
         "text": "我"
       }
     ]
