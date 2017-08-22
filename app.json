@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/activities/activities",
-    "pages/index/index"
+    "pages/profile/profile"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -18,7 +18,7 @@
         "text": "活动"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/profile/profile",
         "iconPath": "image/ring.png",
         "selectedIconPath": "image/ring_focus.png",
         "text": "我"
