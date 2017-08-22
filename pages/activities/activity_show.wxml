@@ -1,1 +1,2 @@
+<image src='{{instance.cover}}' />
 <text>{{instance.summary}}</text>
