@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/activities/activity_list",
+    "pages/activities/activity_show",
     "pages/profile/profile"
   ],
   "window": {

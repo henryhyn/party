@@ -3,6 +3,12 @@ Page({
   data: {
     list: []
   },
+  show: function (e) {
+    var ds = e.currentTarget.dataset;
+    wx.navigateTo({
+      url: `./activity_show?id=${ds.id}&title=${ds.title}`
+    })
+  },
   onPullDownRefresh: function () {
     var me = this
     activities.getListByPage({
