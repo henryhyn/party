@@ -6,7 +6,7 @@ Page({
   show: function (e) {
     var ds = e.currentTarget.dataset;
     wx.navigateTo({
-      url: `./activity_show?id=${ds.id}&title=${ds.title}`
+      url: `./activity_show?id=${ds.id}`
     })
   },
   onPullDownRefresh: function () {

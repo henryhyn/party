@@ -11,11 +11,13 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function ({ id, title }) {
-    wx.setNavigationBarTitle({ title })
+  onLoad: function ({ id }) {
     activities.getInstanceById({
       id,
-      cb: res => this.setData({ instance: res.data.data || {} })
+      cb: res => {
+        this.setData({ instance: res.data.data || {} })
+        wx.setNavigationBarTitle({ title: this.data.instance.title })
+      }
     })
   },
 
@@ -65,6 +67,11 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+    const { id, title, summary } = this.data.instance
+    return {
+      title,
+      desc: summary,
+      path: `pages/activities/activity_show?id=${id}`
+    }
   }
 })
