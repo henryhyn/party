@@ -1,16 +1,20 @@
-//logs.js
-var util = require('../../utils/util.js')
+import { activities } from '../../store/index'
 Page({
   data: {
     list: []
   },
-  onLoad: function () {
+  onPullDownRefresh: function () {
     var me = this
-    wx.request({
-      url: 'https://kaiyuanshuwu.com/api/activities',
-      success: function (res) {
-        me.setData({ list: res.data.data.list || [] })
+    activities.getListByPage({
+      cb: res => {
+        this.setData({ list: res.data.data.list || [] })
+        wx.stopPullDownRefresh()
       }
+    })
+  },
+  onLoad: function () {
+    activities.getListByPage({
+      cb: res => this.setData({ list: res.data.data.list || [] })
     })
   }
 })
