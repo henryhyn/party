@@ -1,4 +1,10 @@
-<view class="activity-item" bindtap="show" wx:for="{{list}}" wx:key="item.id" data-id="{{item.id}}">
-  <image src='{{item.cover}}' />
-  <text>{{item.title}}</text>
-</view>
+<block wx:for="{{list}}" wx:key="item.id">
+  <view class="activity-item" bindtap="show" data-id="{{item.id}}">
+    <view>
+      <image src='{{item.cover}}' />
+    </view>
+    <view>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+</block>
