@@ -1,6 +1,6 @@
 <view class="activity-show">
   <view>
-    <image src='{{instance.cover}}' />
+    <image style="width:100%" src='{{instance.cover}}' />
   </view>
   <view>
     <text>{{instance.summary}}</text>
