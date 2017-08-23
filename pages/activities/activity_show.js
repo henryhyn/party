@@ -53,7 +53,14 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    activities.getInstanceById({
+      id: this.data.instance.id,
+      cb: res => {
+        this.setData({ instance: res.data.data || {} })
+        wx.setNavigationBarTitle({ title: this.data.instance.title })
+        wx.stopPullDownRefresh()
+      }
+    })
   },
 
   /**
