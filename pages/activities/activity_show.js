@@ -67,10 +67,9 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    const { id, title, summary } = this.data.instance
+    const { id, title } = this.data.instance
     return {
       title,
-      desc: summary,
       path: `pages/activities/activity_show?id=${id}`
     }
   }
