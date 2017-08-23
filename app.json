@@ -5,6 +5,7 @@
     "pages/profile/profile"
   ],
   "window": {
+    "backgroundColor": "#ccc",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "91聚乐Pro",
