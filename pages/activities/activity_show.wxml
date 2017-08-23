@@ -1,3 +1,5 @@
-<image src='{{instance.cover}}' />
-<text>{{instance.summary}}</text>
-<rich-text nodes='{{instance.content}}'/>
+<view class="activity-show">
+  <image src='{{instance.cover}}' />
+  <text>{{instance.summary}}</text>
+  <rich-text nodes='{{instance.content}}' />
+</view>

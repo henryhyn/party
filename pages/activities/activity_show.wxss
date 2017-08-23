@@ -1,1 +1,3 @@
-/* pages/activities/activity_show.wxss */
+.activity-show {
+  padding: 40rpx;
+}
