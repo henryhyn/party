@@ -1,7 +1,5 @@
 <view class="activity-show">
-  <view>
-    <image style="width:100%" src='{{instance.cover}}' />
-  </view>
+  <image style="width:100%;display:block" src='{{instance.cover}}' />
   <view class="hui-md-output">
     <rich-text nodes='{{instance.content}}' />
   </view>

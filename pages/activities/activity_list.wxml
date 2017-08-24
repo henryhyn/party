@@ -1,9 +1,7 @@
 <scroll-view class="activity-list">
   <block wx:for="{{list}}" wx:key="item.id">
     <view class="activity-item" bindtap="show" data-id="{{item.id}}">
-      <view>
-        <image style="width:100%" src='{{item.cover}}' />
-      </view>
+      <image style="width:100%;display:block" src='{{item.cover}}' />
       <view>
         <text>{{item.title}}</text>
       </view>
