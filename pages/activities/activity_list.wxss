@@ -3,7 +3,7 @@
 }
 
 .activity-item {
-  background-color: #fff;
+  background-color: white;
   padding: 20rpx;
   margin-bottom: 20rpx;
 }

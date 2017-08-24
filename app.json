@@ -21,7 +21,7 @@
         "text": "活动"
       },
       {
-        "pagePath": "pages/maps/location",
+        "pagePath": "pages/profile/profile",
         "iconPath": "image/ring.png",
         "selectedIconPath": "image/ring_focus.png",
         "text": "我"
