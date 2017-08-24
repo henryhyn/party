@@ -1,8 +1,6 @@
 <view class="activity-show">
   <image style="width:100%;display:block" src='{{instance.cover}}' />
   <view class="activity-info" bindtap="openMap">
-    <text class="activity-info-item">类型: {{instance.category}}</text>
-    <text class="activity-info-item">预算: {{instance.feeText}}</text>
     <text class="activity-info-item">地点: {{instance.fullAddress}}</text>
   </view>
   <view class="hui-md-output">
