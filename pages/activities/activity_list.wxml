@@ -7,8 +7,8 @@
       </view>
       <view class="activity-info">
         <text class="activity-info-item">类型: {{item.category}}</text>
-        <text class="activity-info-item">预算: <block wx:if='{{item.fee > 0}}'>¥{{item.fee}}</block><block wx:else>免费</block></text>
-        <text class="activity-info-item">地点: {{item.address}}<block wx:if="{{item.crossroad}}"> ({{item.crossroad}})</block></text>
+        <text class="activity-info-item">预算: {{item.feeText}}</text>
+        <text class="activity-info-item">地点: {{item.fullAddress}}</text>
       </view>
     </view>
   </block>

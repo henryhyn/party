@@ -20,6 +20,16 @@ Page({
     })
   },
 
+  openMap: function () {
+    const { latitude, longitude, title, fullAddress } = this.data.instance
+    wx.openLocation({
+      latitude: latitude || 31.221633,
+      longitude: longitude || 121.426766,
+      name: title,
+      address: fullAddress
+    })
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

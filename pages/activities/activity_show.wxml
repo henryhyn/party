@@ -1,9 +1,9 @@
 <view class="activity-show">
   <image style="width:100%;display:block" src='{{instance.cover}}' />
-  <view class="activity-info">
+  <view class="activity-info" bindtap="openMap">
     <text class="activity-info-item">类型: {{instance.category}}</text>
-    <text class="activity-info-item">预算: <block wx:if='{{instance.fee > 0}}'>¥{{instance.fee}}</block><block wx:else>免费</block></text>
-    <text class="activity-info-item">地点: {{instance.address}}<block wx:if="{{instance.crossroad}}"> ({{instance.crossroad}})</block></text>
+    <text class="activity-info-item">预算: {{instance.feeText}}</text>
+    <text class="activity-info-item">地点: {{instance.fullAddress}}</text>
   </view>
   <view class="hui-md-output">
     <rich-text nodes='{{instance.content}}' />

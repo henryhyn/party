@@ -3,6 +3,8 @@ import Hex from '../utils/Hex'
 export default {
   convert(instance) {
     instance.category = ['徒步', '骑行'][instance.categoryId - 1]
+    instance.feeText = Hex.validNumber(instance.fee) && instance.fee > 0 ? `¥${instance.fee}` : '免费'
+    instance.fullAddress = Hex.validString(instance.crossroad) ? `${instance.address} (${instance.crossroad})` : instance.address
   },
 
   getInstanceById({ id, cb = Hex.empty }) {
