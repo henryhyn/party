@@ -10,6 +10,17 @@
     <view class="hui-list-item">
       <text>预算: {{instance.feeText}}</text>
     </view>
+    <view class="hui-list-item">
+      <text>时长: {{instance.time}} 小时</text>
+    </view>
+  </view>
+  <view class="hui-panel">
+    <view class="hui-panel-title" bindtap="openRoute">
+      <text>活动路线</text>
+    </view>
+    <view class="hui-panel-body">
+      <text>{{instance.route}}</text>
+    </view>
   </view>
   <view class="hui-panel">
     <view class="hui-panel-title">
