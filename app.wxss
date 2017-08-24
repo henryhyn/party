@@ -16,6 +16,8 @@ text {
   color: #666;
 }
 
+/* 列表  */
+
 .hui-list {
   padding-left: 20rpx;
   padding-top: 20rpx;
@@ -29,9 +31,11 @@ text {
   margin-top: 20rpx;
 }
 
+/* 面板 */
+
 .hui-panel {
-  padding: 20rpx;
   margin-top: 20rpx;
+  padding: 20rpx;
   background-color: white;
 }
 
@@ -43,8 +47,10 @@ text {
 
 .hui-panel-title text {
   font-size: 36rpx;
-  color: lightgray;
+  color: gray;
 }
+
+/* Markdown 输出 */
 
 .hui-md-output {
   font-family: MicroSoft Yahei;
