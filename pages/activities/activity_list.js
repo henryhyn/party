@@ -10,17 +10,22 @@ Page({
     })
   },
   onPullDownRefresh: function () {
-    var me = this
+    wx.showNavigationBarLoading()
     activities.getListByPage({
       cb: res => {
         this.setData({ list: res.data.data.list || [] })
         wx.stopPullDownRefresh()
+        wx.hideNavigationBarLoading()
       }
     })
   },
   onLoad: function () {
+    wx.showNavigationBarLoading()
     activities.getListByPage({
-      cb: res => this.setData({ list: res.data.data.list || [] })
+      cb: res => {
+        this.setData({ list: res.data.data.list || [] })
+        wx.hideNavigationBarLoading()
+      }
     })
   }
 })
