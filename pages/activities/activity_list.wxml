@@ -7,6 +7,11 @@
       <view>
         <text>{{item.title}}</text>
       </view>
+      <view class="activity-info">
+        <text class="activity-info-item">类型: 徒步</text>
+        <text class="activity-info-item">地点: 江苏路地铁站</text>
+        <text class="activity-info-item">预算: 免费</text>
+      </view>
     </view>
   </block>
 </scroll-view>

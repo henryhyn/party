@@ -7,3 +7,9 @@
   padding: 30rpx;
   margin-bottom: 30rpx;
 }
+
+.activity-info-item {
+  font-size: 20rpx;
+  color: gray;
+  margin-right: 20rpx;
+}
