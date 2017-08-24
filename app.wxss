@@ -10,6 +10,19 @@
   box-sizing: border-box;
 }
 
+text {
+  font-family: MicroSoft Yahei;
+  font-size: 24rpx;
+  color: #666;
+}
+
+.hui-md-output {
+  font-family: MicroSoft Yahei;
+  font-size: 24rpx;
+  color: #666;
+  padding: 30rpx;
+}
+
 .h2_class {
   margin-top: 40rpx;
   margin-bottom: 30rpx;
@@ -23,10 +36,6 @@
 .h4_class {
   margin-top: 25rpx;
   margin-bottom: 20rpx;
-}
-
-.blockquote_class {
-  border-left: 4px solid lightpink;
 }
 
 .p_class {

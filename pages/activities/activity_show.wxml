@@ -5,5 +5,7 @@
   <view>
     <text>{{instance.summary}}</text>
   </view>
-  <rich-text nodes='{{instance.content}}' />
+  <view class="hui-md-output">
+    <rich-text nodes='{{instance.content}}' />
+  </view>
 </view>
