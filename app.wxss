@@ -44,3 +44,7 @@ text {
   margin-bottom: 10rpx;
   line-height: 1.2;
 }
+
+.img_class {
+  max-width: 100%;
+}
