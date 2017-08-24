@@ -1,8 +1,11 @@
 .activity-info {
   padding: 20rpx;
-  background-color: lightseagreen;
+}
+
+.activity-summary {
+  padding: 20rpx;
 }
 
 .activity-info-item {
-    margin-right: 10rpx;
+  margin-right: 10rpx;
 }

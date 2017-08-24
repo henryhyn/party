@@ -3,6 +3,21 @@
   <view class="activity-info" bindtap="openMap">
     <text class="activity-info-item">地点: {{instance.fullAddress}}</text>
   </view>
+  <view class="activity-info">
+    <text class="activity-info-item">类型: {{instance.category}}</text>
+  </view>
+  <view class="activity-info">
+    <text class="activity-info-item">预算: {{instance.feeText}}</text>
+  </view>
+  <view class="hui-section-title">
+    <text>活动简介</text>
+  </view>
+  <view class="activity-summary">
+    <text>{{instance.summary}}</text>
+  </view>
+  <view class="hui-section-title">
+    <text>活动详情</text>
+  </view>
   <view class="hui-md-output">
     <rich-text nodes='{{instance.content}}' />
   </view>
