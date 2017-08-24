@@ -13,7 +13,7 @@
 text {
   font-family: MicroSoft Yahei;
   font-size: 24rpx;
-  color: #666;
+  color: #333;
 }
 
 /* 列表  */
@@ -47,7 +47,7 @@ text {
 
 .hui-panel-title text {
   font-size: 36rpx;
-  color: gray;
+  color: #555;
 }
 
 /* Markdown 输出 */
@@ -55,7 +55,7 @@ text {
 .hui-md-output {
   font-family: MicroSoft Yahei;
   font-size: 24rpx;
-  color: #666;
+  color: #333;
 }
 
 .h2_class {
@@ -76,8 +76,8 @@ text {
 
 .p_class {
   text-align: justify;
-  margin-bottom: 10rpx;
-  line-height: 1.2;
+  margin-bottom: 15rpx;
+  line-height: 1.5;
 }
 
 .img_class {

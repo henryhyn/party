@@ -10,6 +10,6 @@
 
 .activity-info-item {
   font-size: 20rpx;
-  color: gray;
+  color: #555;
   margin-right: 20rpx;
 }
