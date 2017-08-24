@@ -10,22 +10,16 @@ Page({
     })
   },
   onPullDownRefresh: function () {
-    wx.showNavigationBarLoading()
     activities.getListByPage({
-      cb: res => {
-        this.setData({ list: res.data.data.list || [] })
+      cb: list => {
+        this.setData({ list })
         wx.stopPullDownRefresh()
-        wx.hideNavigationBarLoading()
       }
     })
   },
   onLoad: function () {
-    wx.showNavigationBarLoading()
     activities.getListByPage({
-      cb: res => {
-        this.setData({ list: res.data.data.list || [] })
-        wx.hideNavigationBarLoading()
-      }
+      cb: list => this.setData({ list })
     })
   }
 })

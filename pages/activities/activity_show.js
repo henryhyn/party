@@ -12,13 +12,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function ({ id }) {
-    wx.showNavigationBarLoading()
     activities.getInstanceById({
       id,
-      cb: res => {
-        this.setData({ instance: res.data.data || {} })
-        wx.setNavigationBarTitle({ title: this.data.instance.title })
-        wx.hideNavigationBarLoading()
+      cb: instance => {
+        this.setData({ instance })
       }
     })
   },
@@ -55,14 +52,11 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-    wx.showNavigationBarLoading()
     activities.getInstanceById({
       id: this.data.instance.id,
-      cb: res => {
-        this.setData({ instance: res.data.data || {} })
-        wx.setNavigationBarTitle({ title: this.data.instance.title })
+      cb: instance => {
+        this.setData({ instance })
         wx.stopPullDownRefresh()
-        wx.hideNavigationBarLoading()
       }
     })
   },
