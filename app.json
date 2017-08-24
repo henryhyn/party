@@ -2,6 +2,7 @@
   "pages": [
     "pages/activities/activity_list",
     "pages/activities/activity_show",
+    "pages/maps/location",
     "pages/profile/profile"
   ],
   "window": {
@@ -20,7 +21,7 @@
         "text": "活动"
       },
       {
-        "pagePath": "pages/profile/profile",
+        "pagePath": "pages/maps/location",
         "iconPath": "image/ring.png",
         "selectedIconPath": "image/ring_focus.png",
         "text": "我"
