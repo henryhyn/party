@@ -20,7 +20,7 @@ text {
   font-family: MicroSoft Yahei;
   font-size: 24rpx;
   color: #666;
-  padding: 30rpx;
+  padding: 20rpx;
 }
 
 .h2_class {

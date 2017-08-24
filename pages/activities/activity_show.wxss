@@ -1,5 +1,5 @@
 .activity-info {
-  padding: 30rpx;
+  padding: 20rpx;
   background-color: lightseagreen;
 }
 

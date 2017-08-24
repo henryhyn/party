@@ -4,8 +4,8 @@
 
 .activity-item {
   background-color: #fff;
-  padding: 30rpx;
-  margin-bottom: 30rpx;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
 }
 
 .activity-info-item {
