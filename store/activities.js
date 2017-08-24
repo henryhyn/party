@@ -8,7 +8,7 @@ export default {
   getInstanceById({ id, cb = Hex.empty }) {
     wx.showNavigationBarLoading()
     wx.request({
-      url: `https://kaiyuanshuwu.com/api/activities/${id}`,
+      url: `${Hex.domain}/api/activities/${id}`,
       success: res => {
         const instance = res.data.data || {}
         this.convert(instance)
@@ -23,7 +23,7 @@ export default {
     const cb = payload.cb || Hex.empty
     wx.showNavigationBarLoading()
     wx.request({
-      url: 'https://kaiyuanshuwu.com/api/activities',
+      url: `${Hex.domain}/api/activities`,
       success: res => {
         const list = res.data.data.list || []
         list.map(this.convert)
