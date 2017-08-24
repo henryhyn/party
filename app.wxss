@@ -16,12 +16,32 @@ text {
   color: #666;
 }
 
-.hui-section-title {
-  padding: 20rpx;
-  border-top: 1px solid #f2f2f2;
+.hui-list {
+  padding-left: 20rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  background-color: white;
 }
 
-.hui-section-title text {
+.hui-list-item + .hui-list-item {
+  border-top: 1px solid #f2f2f2;
+  padding-top: 20rpx;
+  margin-top: 20rpx;
+}
+
+.hui-panel {
+  padding: 20rpx;
+  margin-top: 20rpx;
+  background-color: white;
+}
+
+.hui-panel-title {
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.hui-panel-title text {
   font-size: 36rpx;
   color: lightgray;
 }
@@ -30,7 +50,6 @@ text {
   font-family: MicroSoft Yahei;
   font-size: 24rpx;
   color: #666;
-  padding: 20rpx;
 }
 
 .h2_class {

@@ -1,24 +1,30 @@
 <view class="activity-show">
   <image style="width:100%;display:block" src='{{instance.cover}}' />
-  <view class="activity-info" bindtap="openMap">
-    <text class="activity-info-item">地点: {{instance.fullAddress}}</text>
+  <view class="hui-list">
+    <view class="hui-list-item" bindtap="openMap">
+      <text>地点: {{instance.fullAddress}}</text>
+    </view>
+    <view class="hui-list-item">
+      <text>类型: {{instance.category}}</text>
+    </view>
+    <view class="hui-list-item">
+      <text>预算: {{instance.feeText}}</text>
+    </view>
   </view>
-  <view class="activity-info">
-    <text class="activity-info-item">类型: {{instance.category}}</text>
+  <view class="hui-panel">
+    <view class="hui-panel-title">
+      <text>活动简介</text>
+    </view>
+    <view class="hui-panel-body">
+      <text>{{instance.summary}}</text>
+    </view>
   </view>
-  <view class="activity-info">
-    <text class="activity-info-item">预算: {{instance.feeText}}</text>
-  </view>
-  <view class="hui-section-title">
-    <text>活动简介</text>
-  </view>
-  <view class="activity-summary">
-    <text>{{instance.summary}}</text>
-  </view>
-  <view class="hui-section-title">
-    <text>活动详情</text>
-  </view>
-  <view class="hui-md-output">
-    <rich-text nodes='{{instance.content}}' />
+  <view class="hui-panel">
+    <view class="hui-panel-title">
+      <text>活动详情</text>
+    </view>
+    <view class="hui-panel-body hui-md-output">
+      <rich-text nodes='{{instance.content}}' />
+    </view>
   </view>
 </view>
