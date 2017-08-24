@@ -1,0 +1,8 @@
+.activity-info {
+  padding: 30rpx;
+  background-color: lightseagreen;
+}
+
+.activity-info-item {
+    margin-right: 10rpx;
+}
