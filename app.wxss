@@ -31,6 +31,29 @@ text {
   margin-top: 20rpx;
 }
 
+/* 更多  */
+
+.more {
+  float: right;
+}
+
+.hui-list .more {
+  padding-right: 20rpx;
+}
+
+.more text {
+  font-size: 24rpx !important;
+  vertical-align: middle;
+  margin-right: 10rpx;
+  color: #1f4ba5 !important;
+}
+
+.more image {
+  width: 9rpx;
+  height: 16rpx;
+  vertical-align: middle;
+}
+
 /* 面板 */
 
 .hui-panel {
