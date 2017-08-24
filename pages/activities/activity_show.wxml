@@ -2,9 +2,6 @@
   <view>
     <image style="width:100%" src='{{instance.cover}}' />
   </view>
-  <view>
-    <text>{{instance.summary}}</text>
-  </view>
   <view class="hui-md-output">
     <rich-text nodes='{{instance.content}}' />
   </view>

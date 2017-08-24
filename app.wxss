@@ -36,6 +36,7 @@ text {
 .h4_class {
   margin-top: 25rpx;
   margin-bottom: 20rpx;
+  text-align: center;
 }
 
 .p_class {
