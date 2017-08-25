@@ -23,7 +23,7 @@ Page({
       clickable: true
     }, {
       id: 2,
-      iconPath: '/image/discovery_focus.png',
+      iconPath: '/image/index_focus.png',
       position: {
         left: 10,
         top: 50,
@@ -75,7 +75,11 @@ Page({
         }
       })
     } else if (controlId === 2) {
-      this.setData({ scale: 16 })
+      const { points } = this.data
+      const length = points.length
+      const longitude = Hex.sum(points.map(i => i.longitude)) / length
+      const latitude = Hex.sum(points.map(i => i.latitude)) / length
+      this.setData({ points, longitude, latitude })
     }
   },
 
