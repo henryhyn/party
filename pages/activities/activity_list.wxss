@@ -1,7 +1,3 @@
-.activity-list {
-  background-color: #f2f2f2;
-}
-
 .activity-item {
   background-color: white;
   padding: 20rpx;
