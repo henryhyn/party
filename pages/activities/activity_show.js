@@ -30,9 +30,10 @@ Page({
     })
   },
 
-  openRoute: function () {
+  openRoute: function (e) {
+    var ds = e.currentTarget.dataset;
     wx.navigateTo({
-      url: '../maps/location',
+      url: `../maps/location?id=${ds.id}`,
     })
   },
 

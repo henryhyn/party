@@ -1,4 +1,5 @@
 import Hex from '../../utils/Hex'
+import { activities } from '../../store/index'
 Page({
 
   /**
@@ -37,33 +38,27 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-    const route = [{
-      longitude: 121.420150,
-      latitude: 31.215430,
-      title: '大众点评'
-    }, {
-      longitude: 121.416520,
-      latitude: 31.219030
-    }, {
-      longitude: 121.430626,
-      latitude: 31.220292,
-      title: '江苏路'
-    }]
-    const markers = route.filter(i => i.title)
-    const points = route.map(i => {
-      const { longitude, latitude } = i
-      return { longitude, latitude }
+  onLoad: function ({ id }) {
+    activities.getInstanceById({
+      id,
+      cb: instance => {
+        const pointList = instance.pointList || []
+        const markers = pointList.filter(i => i.title)
+        const points = pointList.map(i => {
+          const { longitude, latitude } = i
+          return { longitude, latitude }
+        })
+        const length = points.length
+        const longitude = Hex.sum(points.map(i => i.longitude)) / length
+        const latitude = Hex.sum(points.map(i => i.latitude)) / length
+        const polyline = [{
+          points,
+          color: "#FF0000",
+          width: 2
+        }]
+        this.setData({ longitude, latitude, markers, points, polyline })
+      }
     })
-    const length = points.length
-    const longitude = Hex.sum(points.map(i => i.longitude)) / length
-    const latitude = Hex.sum(points.map(i => i.latitude)) / length
-    const polyline = [{
-      points,
-      color: "#FF0000",
-      width: 2
-    }]
-    this.setData({ longitude, latitude, markers, points, polyline })
   },
 
   controltap: function ({ controlId }) {
