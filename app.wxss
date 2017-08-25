@@ -69,8 +69,8 @@ text {
 }
 
 .hui-panel-title text {
-  font-size: 36rpx;
-  color: #555;
+  font-size: 30rpx;
+  color: #666;
 }
 
 /* Markdown 输出 */

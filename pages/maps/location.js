@@ -5,7 +5,39 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    markers: [{
+      longitude: 121.420150,
+      latitude: 31.215430,
+      title: '大众点评',
+      callout: {
+        content: '大众点评',
+        color: "#FF0000",
+        bgColor: "#FFFFFF"
+      }
+    }],
+    polyline: [{
+      points: [{
+        longitude: 121.420150,
+        latitude: 31.215430
+      }, {
+        longitude: 121.430626,
+        latitude: 31.220292
+      }],
+      arrowLine: true,
+      color: "#FF0000",
+      width: 2
+    }],
+    controls: [{
+      id: 1,
+      iconPath: '/image/discovery_focus.png',
+      position: {
+        left: 10,
+        top: 10,
+        width: 30,
+        height: 30
+      },
+      clickable: true
+    }]
   },
 
   /**
