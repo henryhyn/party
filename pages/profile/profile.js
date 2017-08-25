@@ -3,7 +3,7 @@
 var app = getApp()
 Page({
   data: {
-    motto: '欢迎加入!',
+    motto: '活动让生活更美好!',
     userInfo: {}
   },
   //事件处理函数
