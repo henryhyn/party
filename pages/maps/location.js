@@ -5,28 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    markers: [{
-      longitude: 121.420150,
-      latitude: 31.215430,
-      title: '大众点评',
-      callout: {
-        content: '大众点评',
-        color: "#FF0000",
-        bgColor: "#FFFFFF"
-      }
-    }],
-    polyline: [{
-      points: [{
-        longitude: 121.420150,
-        latitude: 31.215430
-      }, {
-        longitude: 121.430626,
-        latitude: 31.220292
-      }],
-      arrowLine: true,
-      color: "#FF0000",
-      width: 2
-    }],
+    markers: [],
+    points: [],
+    polyline: [],
     controls: [{
       id: 1,
       iconPath: '/image/discovery_focus.png',
@@ -44,7 +25,29 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    const route = [{
+      longitude: 121.420150,
+      latitude: 31.215430,
+      title: '大众点评'
+    }, {
+      longitude: 121.416520,
+      latitude: 31.219030
+    }, {
+      longitude: 121.430626,
+      latitude: 31.220292,
+      title: '江苏路'
+    }]
+    const markers = route.filter(i => i.title)
+    const points = route.map(i => {
+      const { longitude, latitude } = i
+      return { longitude, latitude }
+    })
+    const polyline = [{
+      points,
+      color: "#FF0000",
+      width: 2
+    }]
+    this.setData({ markers, points, polyline })
   },
 
   /**
