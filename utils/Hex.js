@@ -9,4 +9,6 @@ Hex.validString = str => Hex.validAny(str) && str && str.toLowerCase() !== 'null
 Hex.validNumber = num => Hex.validAny(num);
 Hex.validId = num => Hex.validAny(num) && num > 0;
 
+Hex.sum = array => (array || []).reduce((sum, val) => sum + val, 0)
+
 export default Hex

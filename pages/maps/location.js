@@ -1,10 +1,13 @@
-// pages/maps/location.js
+import Hex from '../../utils/Hex'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    scale: 16,
+    longitude: 121.476200,
+    latitude: 31.229670,
     markers: [],
     points: [],
     polyline: [],
@@ -14,6 +17,16 @@ Page({
       position: {
         left: 10,
         top: 10,
+        width: 30,
+        height: 30
+      },
+      clickable: true
+    }, {
+      id: 2,
+      iconPath: '/image/discovery_focus.png',
+      position: {
+        left: 10,
+        top: 50,
         width: 30,
         height: 30
       },
@@ -42,12 +55,28 @@ Page({
       const { longitude, latitude } = i
       return { longitude, latitude }
     })
+    const length = points.length
+    const longitude = Hex.sum(points.map(i => i.longitude)) / length
+    const latitude = Hex.sum(points.map(i => i.latitude)) / length
     const polyline = [{
       points,
       color: "#FF0000",
       width: 2
     }]
-    this.setData({ markers, points, polyline })
+    this.setData({ longitude, latitude, markers, points, polyline })
+  },
+
+  controltap: function ({ controlId }) {
+    if (controlId === 1) {
+      wx.getLocation({
+        success: res => {
+          const { longitude, latitude } = res
+          this.setData({ longitude, latitude })
+        }
+      })
+    } else if (controlId === 2) {
+      this.setData({ scale: 16 })
+    }
   },
 
   /**
