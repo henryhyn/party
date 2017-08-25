@@ -14,22 +14,22 @@ Page({
     polyline: [],
     controls: [{
       id: 1,
-      iconPath: '/image/discovery_focus.png',
+      iconPath: '/image/location.png',
       position: {
         left: 10,
         top: 10,
-        width: 30,
-        height: 30
+        width: 50,
+        height: 50
       },
       clickable: true
     }, {
       id: 2,
-      iconPath: '/image/index_focus.png',
+      iconPath: '/image/icon_API_HL.png',
       position: {
-        left: 10,
-        top: 50,
-        width: 30,
-        height: 30
+        left: 15,
+        top: 60,
+        width: 40,
+        height: 40
       },
       clickable: true
     }]
@@ -54,7 +54,7 @@ Page({
         const polyline = [{
           points,
           color: "#FF0000",
-          width: 2
+          width: 5
         }]
         this.setData({ longitude, latitude, markers, points, polyline })
       }
