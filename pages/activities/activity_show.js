@@ -12,7 +12,7 @@ Page({
   addReview: function (e) {
     var ds = e.currentTarget.dataset;
     wx.navigateTo({
-      url: `../reviews/review_form?id=${ds.id}&type=activity`
+      url: `../reviews/review_form?id=${ds.id}&source=activity`
     })
   },
   /**

@@ -1,25 +1,29 @@
 import Hex from '../../utils/Hex'
-
+import { reviews } from '../../store/index'
+var app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    id: null,
-    type: null,
+    userInfo: {},
+    outerId: null,
+    source: null,
     tempFilePaths: []
   },
   submit: function (e) {
     const { reviewBody } = e.detail.value
-    const { id, type, tempFilePaths } = this.data
+    const { userInfo, outerId, source, tempFilePaths } = this.data
     const pictureKeys = []
     Hex.uploadImage(tempFilePaths, pictureKeys, () => {
-      console.log({
-        id,
-        type,
-        reviewBody,
-        pictureKeys: pictureKeys.join(',')
+      reviews.save({
+        userId: userInfo.id,
+        outerId,
+        source,
+        status: 10,
+        pictureKeys: pictureKeys.join(','),
+        reviewBody
       })
     })
   },
@@ -38,8 +42,9 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function ({ id, type }) {
-    this.setData({ id, type })
+  onLoad: function ({ id: outerId, source }) {
+    this.setData({ outerId, source })
+    app.getUserInfo(userInfo => this.setData({ userInfo }))
   },
 
   /**
