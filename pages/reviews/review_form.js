@@ -7,6 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    submitting: false,
     userInfo: {},
     outerId: null,
     source: null,
@@ -16,6 +17,7 @@ Page({
     const { reviewBody } = e.detail.value
     const { userInfo, outerId, source, tempFilePaths } = this.data
     const pictureKeys = []
+    this.setData({ submitting: true })
     Hex.uploadImage(tempFilePaths, pictureKeys, () => {
       reviews.save({
         userId: userInfo.id,
@@ -24,6 +26,9 @@ Page({
         status: 10,
         pictureKeys: pictureKeys.join(','),
         reviewBody
+      }, d => {
+        this.setData({ submitting: false })
+        wx.navigateBack()
       })
     })
   },
