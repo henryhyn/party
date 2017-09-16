@@ -9,7 +9,12 @@ Page({
       content: ''
     }
   },
-
+  addReview: function (e) {
+    var ds = e.currentTarget.dataset;
+    wx.navigateTo({
+      url: `../reviews/review_form?id=${ds.id}&type=activity`
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

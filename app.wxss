@@ -77,6 +77,29 @@ text {
   color: #555;
 }
 
+/* 操作工具条 */
+
+.hui-operation {
+  background-color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hui-operation-vskip {
+  margin-bottom: 90rpx;
+}
+
+.hui-image-preview {
+  display: inline-block;
+  margin-bottom: 8rpx;
+}
+
+.hui-image-preview {
+  margin-left: 21rpx;
+}
+
 /* Markdown 输出 */
 
 .hui-md-output {

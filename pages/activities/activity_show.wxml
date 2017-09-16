@@ -37,12 +37,15 @@
       <text>{{instance.summary}}</text>
     </view>
   </view>
-  <view class="hui-panel">
+  <view class="hui-panel hui-operation-vskip">
     <view class="hui-panel-title">
       <text>活动详情</text>
     </view>
     <view class="hui-panel-body hui-md-output">
       <rich-text nodes='{{instance.content}}' />
     </view>
+  </view>
+  <view class='hui-operation'>
+    <button bindtap='addReview' data-id='{{instance.id}}'>写点评</button>
   </view>
 </view>
