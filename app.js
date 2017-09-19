@@ -1,10 +1,8 @@
-import { users } from './store/index'
+import users from './store/users'
 
-//app.js
 App({
   onLaunch: function () {
-    this.getUserInfo()
-    //调用API从本地缓存中获取数据
+    // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
@@ -14,7 +12,7 @@ App({
     if (this.globalData.userInfo) {
       typeof cb == "function" && cb(this.globalData.userInfo)
     } else {
-      //调用登录接口
+      // 登录
       users.login(data => {
         this.globalData.userInfo = data
         typeof cb == "function" && cb(this.globalData.userInfo)
