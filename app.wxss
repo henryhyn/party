@@ -23,7 +23,7 @@ text {
 /* 列表  */
 
 .hui-list {
-  padding-left: 20rpx;
+  padding-left: 30rpx;
   padding-top: 20rpx;
   padding-bottom: 20rpx;
   background-color: white;
@@ -42,7 +42,7 @@ text {
 }
 
 .hui-list .more {
-  padding-right: 20rpx;
+  padding-right: 30rpx;
 }
 
 .more text {
@@ -61,8 +61,8 @@ text {
 /* 面板 */
 
 .hui-panel {
-  margin-top: 20rpx;
-  padding: 20rpx;
+  margin-top: 30rpx;
+  padding: 30rpx;
   background-color: white;
 }
 
@@ -74,7 +74,7 @@ text {
 
 .hui-panel-title text {
   font-size: 30rpx;
-  color: #555;
+  color: #666;
 }
 
 /* 操作工具条 */
