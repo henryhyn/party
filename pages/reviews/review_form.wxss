@@ -1,1 +1,6 @@
-/* pages/reviews/review_form.wxss */
+.review-form {
+  display: block;
+  overflow: auto;
+  padding-bottom: 50rpx;
+  background-color: white;
+}
