@@ -80,11 +80,19 @@ text {
 /* 操作工具条 */
 
 .hui-operation {
-  background-color: white;
+  background-color: #f7f7fa;
+  border-top: 1px solid #ceced1;
   position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
+  display: flex;
+}
+
+.hui-operation-item {
+  padding: 30rpx;
+  text-align: center;
+  flex: 1;
 }
 
 .hui-operation-vskip {

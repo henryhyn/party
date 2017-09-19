@@ -9,6 +9,11 @@ Page({
       content: ''
     }
   },
+  goHome: function () {
+    wx.navigateTo({
+      url: './activity_list'
+    })
+  },
   addReview: function (e) {
     var ds = e.currentTarget.dataset;
     wx.navigateTo({

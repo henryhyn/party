@@ -47,6 +47,11 @@
   </view>
   <view class='hui-operation-vskip'></view>
   <view class='hui-operation'>
-    <button bindtap='addReview' data-id='{{instance.id}}'>写点评</button>
+    <view class='hui-operation-item' bindtap='goHome'>
+      <text>首页</text>
+    </view>
+    <view class='hui-operation-item' bindtap='addReview' data-id='{{instance.id}}'>
+      <text>写点评</text>
+    </view>
   </view>
 </view>
