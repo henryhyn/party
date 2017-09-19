@@ -4,7 +4,6 @@ export default {
   login(cb = Hex.empty) {
     wx.getUserInfo({
       lang: 'zh_CN',
-      withCredentials: false,
       success: res => {
         const data = res.userInfo
         wx.login({
