@@ -3,7 +3,7 @@
   <textarea class='hui-form-input' name='reviewBody' placeholder='亲, 这个活动攻略肿么样?'></textarea>
   <button class='hui-form-button' type='primary' bindtap='chooseImage'>上传照片</button>
   <view class='hui-image-preview' wx:for='{{tempFilePaths}}' wx:key='{{item}}'>
-      <image style='width:222rpx;height:222rpx' src='{{item}}'></image>
+      <image style='width:210rpx;height:210rpx' src='{{item}}'></image>
   </view>
   <button class='hui-form-button' loading='{{submitting}}' type='primary' form-type='submit'>提交</button>
   <button class='hui-form-button' form-type='reset'>重置</button>

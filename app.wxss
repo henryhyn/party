@@ -93,11 +93,10 @@ text {
 
 .hui-image-preview {
   display: inline-block;
-  margin-bottom: 8rpx;
-}
-
-.hui-image-preview {
-  margin-left: 21rpx;
+  width: 210rpx;
+  height: 210rpx;
+  margin-bottom: 30rpx;
+  margin-left: 30rpx;
 }
 
 /* 表单样式 */
