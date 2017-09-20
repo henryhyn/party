@@ -35,15 +35,20 @@ Page({
   },
 
   refresh: function () {
-    if (this.data.loading || !this.data.hasMore) {
+    if (this.data.loading) {
       return
     }
 
     this.setData({ loading: true })
     activities.getListByPage({
-      cb: obj => {
-        this.setData(obj)
-        this.setData({ loading: false })
+      page: 1,
+      cb: ({ page, list, hasMore }) => {
+        this.setData({
+          page,
+          hasMore,
+          list,
+          loading: false
+        })
       }
     })
   },
@@ -55,9 +60,14 @@ Page({
 
     this.setData({ loading: true })
     activities.getListByPage({
-      cb: obj => {
-        this.setData(obj)
-        this.setData({ loading: false })
+      page: 1,
+      cb: ({ page, list, hasMore }) => {
+        this.setData({
+          page,
+          hasMore,
+          list,
+          loading: false
+        })
       }
     })
   }
