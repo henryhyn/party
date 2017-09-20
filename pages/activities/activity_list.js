@@ -34,7 +34,7 @@ Page({
     })
   },
 
-  refresh: function () {
+  onPullDownRefresh: function () {
     if (this.data.loading) {
       return
     }
