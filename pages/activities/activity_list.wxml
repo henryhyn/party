@@ -1,4 +1,4 @@
-<scroll-view class="container" style='height: 100vh' scroll-y bindscrolltolower='nextPage'>
+<scroll-view style='height: 100vh' scroll-y bindscrolltolower='nextPage'>
   <block wx:for="{{list}}" wx:key="item.id">
     <view class="activity-item" bindtap="show" data-id="{{item.id}}">
       <image style="width:100%" src='{{item.cover}}' />
