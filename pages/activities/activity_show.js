@@ -1,4 +1,5 @@
-import { activities } from '../../store/index'
+import activities from '../../store/activities'
+
 Page({
 
   /**

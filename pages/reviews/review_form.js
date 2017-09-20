@@ -1,6 +1,8 @@
 import Hex from '../../utils/Hex'
-import { reviews } from '../../store/index'
+import reviews from '../../store/reviews'
+
 var app = getApp()
+
 Page({
 
   /**

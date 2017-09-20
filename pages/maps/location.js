@@ -1,5 +1,6 @@
 import Hex from '../../utils/Hex'
-import { activities } from '../../store/index'
+import activities from '../../store/activities'
+
 Page({
 
   /**
