@@ -96,6 +96,11 @@ text {
 
 /* 缩略图 */
 
+image.hui-image {
+  width: 100%;
+  display: block;
+}
+
 .hui-thumbnail {
   display: inline-block;
   width: 210rpx;

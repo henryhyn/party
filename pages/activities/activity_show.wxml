@@ -1,5 +1,5 @@
 <view>
-  <image style="width:100%;display:block" src='{{instance.cover}}' />
+  <image class='hui-image' src='{{instance.cover}}' />
   <view class="hui-list">
     <view class="hui-list-item" bindtap="openMap">
       <text>地点: {{instance.fullAddress}}</text>
