@@ -1,4 +1,4 @@
-<scroll-view class="container">
+<scroll-view class="container" style='height: 100vh' scroll-y bindscrolltolower='nextPage'>
   <block wx:for="{{list}}" wx:key="item.id">
     <view class="activity-item" bindtap="show" data-id="{{item.id}}">
       <image style="width:100%" src='{{item.cover}}' />
@@ -10,6 +10,18 @@
         <text class="activity-info-item">预算: {{item.feeText}}</text>
         <text class="activity-info-item">地点: {{item.fullAddress}}</text>
       </view>
+    </view>
+  </block>
+  <block wx:if='{{hasMore}}'>
+    <block wx:if='{{loading}}'>
+      <view class='hui-list-more'>
+        <text>玩命加载中...</text>
+      </view>
+    </block>
+  </block>
+  <block wx:else>
+    <view class='hui-list-more'>
+      <text>没有更多啦~~~</text>
     </view>
   </block>
 </scroll-view>

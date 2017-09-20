@@ -22,14 +22,23 @@ export default {
   },
 
   getListByPage(payload = {}) {
+    const page = payload.page || 1
     const cb = payload.cb || Hex.empty
     wx.showNavigationBarLoading()
     wx.request({
       url: `${Hex.domain}/api/activities`,
+      data: {
+        page,
+        pageSize: 3
+      },
       success: res => {
-        const list = res.data.data.list || []
+        const { list, page, pageSize, total } = res.data.data
         list.map(this.convert)
-        cb(list)
+        cb({
+          page,
+          list: list || [],
+          hasMore: page * pageSize < total
+        })
         wx.hideNavigationBarLoading()
       }
     })

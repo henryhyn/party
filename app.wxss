@@ -35,6 +35,11 @@ text {
   margin-top: 20rpx;
 }
 
+.hui-list-more {
+  text-align: center;
+  padding-bottom: 30rpx;
+}
+
 /* 更多  */
 
 .more {
