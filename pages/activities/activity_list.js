@@ -1,4 +1,5 @@
-import { activities } from '../../store/index'
+import activities from '../../store/activities'
+
 Page({
   data: {
     page: 1,
@@ -6,12 +7,14 @@ Page({
     hasMore: true,
     list: []
   },
+
   show: function (e) {
     var ds = e.currentTarget.dataset;
     wx.navigateTo({
       url: `./activity_show?id=${ds.id}`
     })
   },
+
   nextPage: function () {
     if (this.data.loading || !this.data.hasMore) {
       return
@@ -30,17 +33,32 @@ Page({
       }
     })
   },
-  onPullDownRefresh: function () {
+
+  refresh: function () {
+    if (this.data.loading || !this.data.hasMore) {
+      return
+    }
+
+    this.setData({ loading: true })
     activities.getListByPage({
       cb: obj => {
         this.setData(obj)
-        wx.stopPullDownRefresh()
+        this.setData({ loading: false })
       }
     })
   },
+
   onLoad: function () {
+    if (this.data.loading) {
+      return
+    }
+
+    this.setData({ loading: true })
     activities.getListByPage({
-      cb: obj => this.setData(obj)
+      cb: obj => {
+        this.setData(obj)
+        this.setData({ loading: false })
+      }
     })
   }
 })
