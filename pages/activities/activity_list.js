@@ -9,7 +9,7 @@ Page({
   },
 
   show: function (e) {
-    var ds = e.currentTarget.dataset;
+    const ds = e.currentTarget.dataset;
     wx.navigateTo({
       url: `./activity_show?id=${ds.id}`
     })

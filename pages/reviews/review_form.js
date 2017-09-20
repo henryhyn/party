@@ -1,7 +1,7 @@
 import Hex from '../../utils/Hex'
 import reviews from '../../store/reviews'
 
-var app = getApp()
+const app = getApp()
 
 Page({
 

@@ -16,7 +16,7 @@ Page({
     })
   },
   addReview: function (e) {
-    var ds = e.currentTarget.dataset;
+    const ds = e.currentTarget.dataset;
     wx.navigateTo({
       url: `../reviews/review_form?id=${ds.id}&source=activity`
     })
@@ -44,7 +44,7 @@ Page({
   },
 
   openRoute: function (e) {
-    var ds = e.currentTarget.dataset;
+    const ds = e.currentTarget.dataset;
     wx.navigateTo({
       url: `../maps/location?id=${ds.id}`,
     })
