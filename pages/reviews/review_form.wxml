@@ -1,4 +1,4 @@
-<form class='review-form' bindsubmit='submit' bindreset='reset'>
+<form class='hui-form' bindsubmit='submit' bindreset='reset'>
   <view class='hui-form-text'>评论内容:</view>
   <textarea class='hui-form-input' name='reviewBody' placeholder='亲, 这个活动攻略肿么样?'></textarea>
   <button class='hui-form-button' type='primary' bindtap='chooseImage'>上传照片</button>

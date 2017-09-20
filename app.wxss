@@ -111,6 +111,13 @@ text {
 
 /* 表单样式 */
 
+.hui-form {
+  display: block;
+  overflow: auto;
+  padding-bottom: 50rpx;
+  background-color: white;
+}
+
 .hui-form-text {
   font-size: 28rpx;
   margin: 20rpx 30rpx;
