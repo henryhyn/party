@@ -9,22 +9,24 @@
 }
 
 .userinfo {
+  background-color: white;
+  padding: 20rpx 30rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
   display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .userinfo-avatar {
   width: 128rpx;
   height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+  margin-right: 20rpx;
+  border-radius: 10rpx;
+  display: block;
 }
 
 .userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
+  flex: 1;
+  display: block;
+  line-height: 128rpx;
+  color: #333;
 }

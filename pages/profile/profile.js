@@ -1,18 +1,27 @@
-//index.js
-//获取应用实例
 var app = getApp()
+
 Page({
   data: {
-    motto: '活动让生活更美好!',
-    userInfo: {}
+    userInfo: {},
+    hasUserInfo: false
   },
-  //事件处理函数
+
   bindViewTap: function () {
     wx.navigateTo({
       url: '../logs/logs'
     })
   },
+
   onLoad: function () {
-    app.getUserInfo(userInfo => this.setData({ userInfo }))
+    this.login()
+  },
+
+  login: function () {
+    app.getUserInfo(data => {
+      this.setData({
+        userInfo: data,
+        hasUserInfo: true
+      })
+    })
   }
 })

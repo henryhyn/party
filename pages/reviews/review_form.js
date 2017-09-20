@@ -50,8 +50,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function ({ id: outerId, source }) {
-    this.setData({ outerId, source })
-    app.getUserInfo(userInfo => this.setData({ userInfo }))
+    app.getUserInfo(userInfo => this.setData({ outerId, source, userInfo }))
   },
 
   /**
