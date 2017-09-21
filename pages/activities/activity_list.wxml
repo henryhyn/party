@@ -1,28 +1,28 @@
 <scroll-view style='height: 100vh' scroll-y bindscrolltolower='nextPage'>
-  <block wx:for="{{list}}" wx:key="item.id">
-    <view class="hui-card" bindtap="show" data-id="{{item.id}}">
+  <block wx:for='{{list}}' wx:key='item.id'>
+    <view class='hui-card' bindtap='show' data-id='{{item.id}}'>
       <image class='hui-image' src='{{item.cover}}' />
       <view>
         <text>{{item.title}}</text>
       </view>
       <view>
-        <text class="hui-info-item">类型: {{item.category}}</text>
-        <text class="hui-info-item">预算: {{item.feeText}}</text>
-        <text class="hui-info-item">地点: {{item.fullAddress}}</text>
+        <text class='hui-info-item'>类型: {{item.category}}</text>
+        <text class='hui-info-item'>预算: {{item.feeText}}</text>
+        <text class='hui-info-item'>地点: {{item.fullAddress}}</text>
       </view>
     </view>
   </block>
   <block wx:if='{{hasMore}}'>
     <block wx:if='{{loading}}'>
-      <view class="weui-loadmore">
-        <view class="weui-loading"></view>
-        <view class="weui-loadmore__tips">玩命加载中...</view>
+      <view class='weui-loadmore'>
+        <view class='weui-loading'></view>
+        <view class='weui-loadmore__tips'>玩命加载中...</view>
       </view>
     </block>
   </block>
   <block wx:else>
-    <view class="weui-loadmore">
-      <view class="weui-loadmore__tips">没有更多啦~~~</view>
+    <view class='weui-loadmore'>
+      <view class='weui-loadmore__tips'>没有更多啦~~~</view>
     </view>
   </block>
 </scroll-view>

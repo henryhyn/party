@@ -1,45 +1,45 @@
 <view>
   <image class='hui-image' src='{{instance.cover}}' />
-  <view class="weui-cells weui-cells_after-title">
-    <view bindtap="openMap" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-      <view class="weui-cell__bd">地点: {{instance.fullAddress}}</view>
-      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  <view class='weui-cells weui-cells_after-title'>
+    <view bindtap='openMap' class='weui-cell weui-cell_access' hover-class='weui-cell_active'>
+      <view class='weui-cell__bd'>地点: {{instance.fullAddress}}</view>
+      <view class='weui-cell__ft weui-cell__ft_in-access'></view>
     </view>
-    <view class="weui-cell">
-      <view class="weui-cell__bd">类型: {{instance.category}}</view>
+    <view class='weui-cell'>
+      <view class='weui-cell__bd'>类型: {{instance.category}}</view>
     </view>
-    <view class="weui-cell">
-      <view class="weui-cell__bd">预算: {{instance.feeText}}</view>
+    <view class='weui-cell'>
+      <view class='weui-cell__bd'>预算: {{instance.feeText}}</view>
     </view>
-    <view wx:if="{{instance.time && instance.time>0}}" class="weui-cell">
-      <view class="weui-cell__bd">时长: {{instance.time}} 小时</view>
+    <view wx:if='{{instance.time && instance.time>0}}' class='weui-cell'>
+      <view class='weui-cell__bd'>时长: {{instance.time}} 小时</view>
     </view>
   </view>
-  <view class="hui-panel">
-    <view class="hui-panel-title" bindtap="openRoute" data-id="{{instance.id}}">
+  <view class='hui-panel'>
+    <view class='hui-panel-title' bindtap='openRoute' data-id='{{instance.id}}'>
       <text>活动路线</text>
-      <view class="more">
-        <text wx:if="{{instance.length && instance.length>0}}">{{instance.length}} 公里</text>
+      <view class='more'>
+        <text wx:if='{{instance.length && instance.length>0}}'>{{instance.length}} 公里</text>
         <span class='weui-cell__ft_in-access'/>
       </view>
     </view>
-    <view class="hui-panel-body">
+    <view class='hui-panel-body'>
       <text>{{instance.route}}</text>
     </view>
   </view>
-  <view class="hui-panel">
-    <view class="hui-panel-title">
+  <view class='hui-panel'>
+    <view class='hui-panel-title'>
       <text>活动简介</text>
     </view>
-    <view class="hui-panel-body">
+    <view class='hui-panel-body'>
       <text>{{instance.summary}}</text>
     </view>
   </view>
-  <view class="hui-panel">
-    <view class="hui-panel-title">
+  <view class='hui-panel'>
+    <view class='hui-panel-title'>
       <text>活动详情</text>
     </view>
-    <view class="hui-panel-body hui-md-output">
+    <view class='hui-panel-body hui-md-output'>
       <rich-text nodes='{{instance.content}}' />
     </view>
   </view>
