@@ -46,6 +46,11 @@ Page({
       },
     })
   },
+  previewImage: function (e) {
+    wx.previewImage({
+      urls: this.data.tempFilePaths
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
