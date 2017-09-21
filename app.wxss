@@ -1,4 +1,5 @@
 @import 'weui.wxss';
+@import 'weui_fix.wxss';
 
 page {
   background-color: #f2f2f2;
