@@ -5,7 +5,7 @@ page {
   background-color: #f2f2f2;
 }
 
-.round-corner {
+.hui-round {
   border-radius: 10rpx;
 }
 
