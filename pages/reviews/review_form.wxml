@@ -1,9 +1,31 @@
 <form class='hui-form' bindsubmit='submit' bindreset='reset'>
   <view class='hui-form-text'>评论内容:</view>
   <textarea class='hui-form-input' name='reviewBody' placeholder='亲, 这个活动攻略肿么样?'></textarea>
-  <button class='hui-form-button' type='primary' bindtap='chooseImage'>上传照片</button>
-  <view class='hui-thumbnail' wx:for='{{tempFilePaths}}' wx:key='{{item}}'>
-      <image src='{{item}}'></image>
+  <view class="weui-cells">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <view class="weui-uploader">
+          <view class="weui-uploader__hd">
+            <view class="weui-uploader__title">上传照片</view>
+            <view class="weui-uploader__info">{{tempFilePaths.length}}/9</view>
+          </view>
+          <view class="weui-uploader__bd">
+            <view class="weui-uploader__files" id="uploaderFiles">
+              <block wx:for="{{tempFilePaths}}" wx:key="*this">
+                <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+                  <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+                </view>
+              </block>
+            </view>
+            <block wx:if="{{tempFilePaths.length<9}}">
+              <view class="weui-uploader__input-box">
+                <view class="weui-uploader__input" bindtap="chooseImage"></view>
+              </view>
+            </block>
+          </view>
+        </view>
+      </view>
+    </view>
   </view>
   <button class='hui-form-button' loading='{{submitting}}' type='primary' form-type='submit'>提交</button>
   <button class='hui-form-button' form-type='reset'>重置</button>
