@@ -1,14 +1,14 @@
 <scroll-view style='height: 100vh' scroll-y bindscrolltolower='nextPage'>
   <block wx:for="{{list}}" wx:key="item.id">
-    <view class="activity-item" bindtap="show" data-id="{{item.id}}">
+    <view class="hui-card" bindtap="show" data-id="{{item.id}}">
       <image class='hui-image' src='{{item.cover}}' />
       <view>
         <text>{{item.title}}</text>
       </view>
-      <view class="activity-info">
-        <text class="activity-info-item">类型: {{item.category}}</text>
-        <text class="activity-info-item">预算: {{item.feeText}}</text>
-        <text class="activity-info-item">地点: {{item.fullAddress}}</text>
+      <view>
+        <text class="hui-info-item">类型: {{item.category}}</text>
+        <text class="hui-info-item">预算: {{item.feeText}}</text>
+        <text class="hui-info-item">地点: {{item.fullAddress}}</text>
       </view>
     </view>
   </block>

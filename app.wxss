@@ -5,7 +5,23 @@ page {
   background-color: #f2f2f2;
 }
 
+.round-corner {
+  border-radius: 10rpx;
+}
+
 /* 大型列表: 列表页 */
+
+.hui-card {
+  background-color: white;
+  padding: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.hui-info-item {
+  font-size: 20rpx;
+  color: #666;
+  margin-right: 20rpx;
+}
 
 .hui-list-more {
   text-align: center;
