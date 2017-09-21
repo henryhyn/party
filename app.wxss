@@ -23,34 +23,10 @@ page {
   margin-right: 20rpx;
 }
 
-.hui-list-more {
-  text-align: center;
-  padding-bottom: 30rpx;
-}
-
-/* 小型列表: 详情页 */
-
-.hui-list {
-  padding-left: 30rpx;
-  padding-top: 20rpx;
-  padding-bottom: 20rpx;
-  background-color: white;
-}
-
-.hui-list-item + .hui-list-item {
-  border-top: 1px solid #f2f2f2;
-  padding-top: 20rpx;
-  margin-top: 20rpx;
-}
-
 /* 更多  */
 
 .more {
   float: right;
-}
-
-.hui-list .more {
-  padding-right: 30rpx;
 }
 
 .more text {
@@ -58,12 +34,6 @@ page {
   vertical-align: middle;
   margin-right: 30rpx;
   color: #1f4ba5 !important;
-}
-
-.more image {
-  width: 9rpx;
-  height: 16rpx;
-  vertical-align: middle;
 }
 
 /* 面板 */
@@ -116,54 +86,6 @@ page {
 image.hui-image {
   width: 100%;
   display: block;
-}
-
-.hui-thumbnail {
-  display: inline-block;
-  width: 210rpx;
-  height: 210rpx;
-  margin-bottom: 30rpx;
-  margin-left: 30rpx;
-}
-
-.hui-thumbnail > image {
-  width: 210rpx;
-  height: 210rpx;
-}
-
-/* 表单样式 */
-
-.hui-form {
-  display: block;
-  overflow: auto;
-  padding-bottom: 50rpx;
-}
-
-.hui-form-text {
-  font-size: 28rpx;
-  margin: 20rpx 30rpx;
-  color: #666;
-}
-
-.hui-form-input {
-  border-radius: 10rpx;
-  font-size: 32rpx;
-  padding: 20rpx 10rpx;
-  background-color: #f2f2f2;
-  margin-left: 30rpx;
-  margin-right: 30rpx;
-}
-
-.input-placeholder, .textarea-placeholder {
-  color: lightgray;
-}
-
-.hui-form-button {
-  margin: 20rpx 30rpx;
-}
-
-textarea {
-  width: 670rpx;
 }
 
 /* Markdown 输出 */
