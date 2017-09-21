@@ -14,14 +14,15 @@
   </block>
   <block wx:if='{{hasMore}}'>
     <block wx:if='{{loading}}'>
-      <view class='hui-list-more'>
-        <text>玩命加载中...</text>
+      <view class="weui-loadmore">
+        <view class="weui-loading"></view>
+        <view class="weui-loadmore__tips">玩命加载中...</view>
       </view>
     </block>
   </block>
   <block wx:else>
-    <view class='hui-list-more'>
-      <text>没有更多啦~~~</text>
+    <view class="weui-loadmore weui-loadmore_line">
+      <view class="weui-loadmore__tips weui-loadmore__tips_in-line">没有更多啦~~~</view>
     </view>
   </block>
 </scroll-view>
