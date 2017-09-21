@@ -8,7 +8,7 @@
       </view>
     </view>
   </view>
-  <view class='weui-cells'>
+  <view class='weui-cells hui-vskip'>
     <view class='weui-cell'>
       <view class='weui-cell__bd'>
         <view class='weui-uploader'>

@@ -9,6 +9,10 @@ page {
   border-radius: 10rpx;
 }
 
+.hui-vskip {
+  margin-top: 30rpx !important;
+}
+
 /* 大型列表: 列表页 */
 
 .hui-card {

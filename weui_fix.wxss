@@ -1,5 +1,5 @@
 .weui-cells {
-  margin-top: 30rpx;
+  margin-top: 0;
 }
 
 .weui-cell {
@@ -8,7 +8,7 @@
 
 .weui-cells__title {
   margin-top: 30rpx;
-  margin-bottom: -10rpx;
+  margin-bottom: 20rpx;
   padding-left: 30rpx;
   padding-right: 30rpx;
 }
