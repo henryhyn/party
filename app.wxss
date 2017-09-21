@@ -52,6 +52,15 @@ page {
   border-bottom: 1px solid #f2f2f2;
   padding-bottom: 20rpx;
   margin-bottom: 20rpx;
+  display: flex;
+}
+
+.hui-panel-title__bd {
+  flex: 1;
+}
+
+.hui-panel-title__ft {
+  padding-right: 30rpx;
 }
 
 .hui-panel-title text {
@@ -59,9 +68,7 @@ page {
   color: #666;
 }
 
-.hui-panel-title .weui-cell__ft_in-access {
-  padding-right: 0;
-}
+
 
 /* 操作工具条 */
 

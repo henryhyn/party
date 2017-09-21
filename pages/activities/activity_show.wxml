@@ -17,10 +17,11 @@
   </view>
   <view class='hui-panel'>
     <view class='hui-panel-title' bindtap='openRoute' data-id='{{instance.id}}'>
-      <text>活动路线</text>
-      <view class='more'>
+      <view class='hui-panel-title__bd'>
+        <text>活动路线</text>
+      </view>
+      <view class='hui-panel-title__ft weui-cell__ft_in-access'>
         <text wx:if='{{instance.length && instance.length>0}}'>{{instance.length}} 公里</text>
-        <span class='weui-cell__ft_in-access'/>
       </view>
     </view>
     <view class='hui-panel-body'>
@@ -29,7 +30,9 @@
   </view>
   <view class='hui-panel'>
     <view class='hui-panel-title'>
-      <text>活动简介</text>
+      <view class='hui-panel-title__bd'>
+        <text>活动简介</text>
+      </view>
     </view>
     <view class='hui-panel-body'>
       <text>{{instance.summary}}</text>
@@ -37,7 +40,9 @@
   </view>
   <view class='hui-panel'>
     <view class='hui-panel-title'>
-      <text>活动详情</text>
+      <view class='hui-panel-title__bd'>
+        <text>活动详情</text>
+      </view>
     </view>
     <view class='hui-panel-body hui-md-output'>
       <rich-text nodes='{{instance.content}}' />
