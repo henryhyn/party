@@ -6,6 +6,13 @@
   padding: 20rpx 30rpx;
 }
 
+.weui-cells__title {
+  margin-top: 30rpx;
+  margin-bottom: -10rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
 .weui-uploader__hd {
   padding-bottom: 0;
 }
@@ -30,4 +37,11 @@
 .weui-uploader__input-box {
   width: 206rpx;
   height: 206rpx;
+}
+
+.weui-btn-area {
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-bottom: 0;
 }
