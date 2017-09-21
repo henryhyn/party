@@ -34,6 +34,8 @@
       </view>
     </view>
   </view>
-  <button class='hui-form-button' loading='{{submitting}}' type='primary' form-type='submit'>提交</button>
-  <button class='hui-form-button' form-type='reset'>重置</button>
+  <view class="weui-btn-area">
+    <button class='weui-btn' loading='{{submitting}}' type='primary' form-type='submit'>提交</button>
+    <button class='weui-btn' form-type='reset'>重置</button>
+  </view>
 </form>
