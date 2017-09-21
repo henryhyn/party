@@ -1,9 +1,15 @@
 <view>
-  <view class='userinfo'>
-    <button size='mini' wx:if="{{!hasUserInfo}}" bindtap='login'>登录</button>
-    <block wx:else>
-      <image class='userinfo-avatar' src="{{userInfo.avatarUrl}}" />
-      <text class='userinfo-nickname'>{{userInfo.nickName}}</text>
-    </block>
+  <view class="weui-panel">
+    <view class="weui-panel__bd">
+      <view class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb userinfo-avatar" src="{{userInfo.avatarUrl}}" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">{{userInfo.nickName}}</view>
+          <view class="weui-media-box__desc">活动让生活更美好</view>
+        </view>
+      </view>
+    </view>
   </view>
 </view>

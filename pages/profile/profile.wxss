@@ -1,32 +1,3 @@
-.profile {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-}
-
-.userinfo {
-  background-color: white;
-  padding: 20rpx 30rpx;
-  margin-top: 20rpx;
-  margin-bottom: 20rpx;
-  display: flex;
-}
-
 .userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin-right: 20rpx;
   border-radius: 10rpx;
-  display: block;
-}
-
-.userinfo-nickname {
-  flex: 1;
-  display: block;
-  line-height: 128rpx;
-  color: #333;
 }
