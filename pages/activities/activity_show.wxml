@@ -1,20 +1,18 @@
 <view>
   <image class='hui-image' src='{{instance.cover}}' />
-  <view class="hui-list">
-    <view class="hui-list-item" bindtap="openMap">
-      <text>地点: {{instance.fullAddress}}</text>
-      <view class="more">
-        <image src="/image/icon/arrow-right.png"></image>
-      </view>
+  <view class="weui-cells weui-cells_after-title">
+    <view bindtap="openMap" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__bd">地点: {{instance.fullAddress}}</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
     </view>
-    <view class="hui-list-item">
-      <text>类型: {{instance.category}}</text>
+    <view class="weui-cell">
+      <view class="weui-cell__bd">类型: {{instance.category}}</view>
     </view>
-    <view class="hui-list-item">
-      <text>预算: {{instance.feeText}}</text>
+    <view class="weui-cell">
+      <view class="weui-cell__bd">预算: {{instance.feeText}}</view>
     </view>
-    <view wx:if="{{instance.time && instance.time>0}}" class="hui-list-item">
-      <text>时长: {{instance.time}} 小时</text>
+    <view wx:if="{{instance.time && instance.time>0}}" class="weui-cell">
+      <view class="weui-cell__bd">时长: {{instance.time}} 小时</view>
     </view>
   </view>
   <view class="hui-panel">
