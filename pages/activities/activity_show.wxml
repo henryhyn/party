@@ -20,7 +20,7 @@
       <text>活动路线</text>
       <view class="more">
         <text wx:if="{{instance.length && instance.length>0}}">{{instance.length}} 公里</text>
-        <image src="/image/icon/arrow-right.png"></image>
+        <span class='weui-cell__ft_in-access'/>
       </view>
     </view>
     <view class="hui-panel-body">

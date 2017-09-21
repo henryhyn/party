@@ -5,12 +5,6 @@ page {
   background-color: #f2f2f2;
 }
 
-text {
-  font-family: MicroSoft Yahei;
-  font-size: 24rpx;
-  color: #333;
-}
-
 /* 大型列表: 列表页 */
 
 .hui-list-more {
@@ -46,7 +40,7 @@ text {
 .more text {
   font-size: 24rpx !important;
   vertical-align: middle;
-  margin-right: 10rpx;
+  margin-right: 30rpx;
   color: #1f4ba5 !important;
 }
 
@@ -73,6 +67,10 @@ text {
 .hui-panel-title text {
   font-size: 30rpx;
   color: #666;
+}
+
+.hui-panel-title .weui-cell__ft_in-access {
+  padding-right: 0;
 }
 
 /* 操作工具条 */
@@ -155,8 +153,7 @@ textarea {
 /* Markdown 输出 */
 
 .hui-md-output {
-  font-family: MicroSoft Yahei;
-  font-size: 24rpx;
+  font-size: 28rpx;
   color: #333;
 }
 
