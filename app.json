@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/reviews/review_form",
     "pages/activities/activity_list",
     "pages/activities/activity_show",
+    "pages/reviews/review_form",
     "pages/maps/location",
     "pages/profile/profile"
   ],
