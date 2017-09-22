@@ -3,6 +3,7 @@
 
 page {
   font-size: 34rpx;
+  line-height: 1.41176471;
   background-color: #f8f8f8;
 }
 
@@ -34,7 +35,10 @@ page {
 
 .hui-panel {
   margin-top: 30rpx;
-  padding: 30rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
   background-color: white;
   border-top: 1rpx solid #d9d9d9;
   border-bottom: 1rpx solid #d9d9d9;
