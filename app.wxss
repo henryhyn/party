@@ -62,6 +62,10 @@ page {
   padding-right: 30rpx;
 }
 
+.hui-panel-body {
+    font-size: 30rpx;
+}
+
 /* 操作工具条 */
 
 .hui-operation {
