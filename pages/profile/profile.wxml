@@ -6,8 +6,8 @@
           <image class='weui-media-box__thumb hui-round' src='{{userInfo.avatarUrl}}' />
         </view>
         <view class='weui-media-box__bd weui-media-box__bd_in-appmsg'>
-          <view class='weui-media-box__title'>{{userInfo.nickName}}</view>
-          <view class='weui-media-box__desc'>活动让生活更美好</view>
+          <text class='weui-media-box__title'>{{userInfo.nickName}}</text>
+          <text class='weui-media-box__desc'>活动让生活更美好</text>
         </view>
       </view>
     </view>

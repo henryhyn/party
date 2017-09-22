@@ -13,8 +13,8 @@
       <view class='weui-cell__bd'>
         <view class='weui-uploader'>
           <view class='weui-uploader__hd'>
-            <view class='weui-uploader__title'>上传照片</view>
-            <view class='weui-uploader__info'>{{tempFilePaths.length}}/9</view>
+            <text class='weui-uploader__title'>上传照片</text>
+            <text class='weui-uploader__info'>{{tempFilePaths.length}}/9</text>
           </view>
           <view class='weui-uploader__bd'>
             <view class='weui-uploader__files'>
