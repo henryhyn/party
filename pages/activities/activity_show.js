@@ -105,7 +105,7 @@ Page({
     const { id, title } = this.data.instance
     return {
       title,
-      path: `pages/activities/activity_show?id=${id}`
+      path: `${this.route}?id=${id}`
     }
   }
 })
