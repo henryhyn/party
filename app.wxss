@@ -27,19 +27,6 @@ page {
   margin-right: 20rpx;
 }
 
-/* 更多  */
-
-.more {
-  float: right;
-}
-
-.more text {
-  font-size: 24rpx !important;
-  vertical-align: middle;
-  margin-right: 30rpx;
-  color: #1f4ba5 !important;
-}
-
 /* 面板 */
 
 .hui-panel {
@@ -62,13 +49,6 @@ page {
 .hui-panel-title__ft {
   padding-right: 30rpx;
 }
-
-.hui-panel-title text {
-  font-size: 30rpx;
-  color: #666;
-}
-
-
 
 /* 操作工具条 */
 
