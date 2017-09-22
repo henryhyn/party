@@ -1,4 +1,4 @@
-<form bindsubmit='submit' bindreset='reset'>
+<form class='hui-form' bindsubmit='submit' bindreset='reset'>
   <view class='weui-cells__title'>
     <text>评论内容</text>
   </view>

@@ -97,6 +97,13 @@ image.hui-image {
   display: block;
 }
 
+/* 表单 */
+
+form.hui-form {
+  display: block;
+  overflow: auto;
+}
+
 /* Markdown 输出 */
 
 .h2_class {
