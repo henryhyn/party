@@ -36,7 +36,7 @@
     <view class='hui-panel-title'>
       <text class='hui-panel-title__bd'>活动详情</text>
     </view>
-    <view class='hui-panel-body hui-md-output'>
+    <view class='hui-panel-body'>
       <rich-text nodes='{{instance.content}}' />
     </view>
   </view>

@@ -2,6 +2,7 @@
 @import 'weui_fix.wxss';
 
 page {
+  color: #333;
   font-size: 34rpx;
   line-height: 1.41176471;
   background-color: #f8f8f8;
@@ -52,10 +53,12 @@ page {
 }
 
 .hui-panel-title__bd {
+  color: #666;
   flex: 1;
 }
 
 .hui-panel-title__ft {
+  color: #999;
   padding-right: 30rpx;
 }
 
@@ -89,10 +92,6 @@ image.hui-image {
 }
 
 /* Markdown 输出 */
-
-.hui-md-output {
-  color: #333;
-}
 
 .h2_class {
   margin-top: 40rpx;
