@@ -59,11 +59,13 @@ page {
 
 .hui-panel-title__ft {
   color: #999;
+  font-size: 30rpx;
   padding-right: 30rpx;
 }
 
 .hui-panel-body {
-    font-size: 30rpx;
+  font-size: 30rpx;
+  line-height: 1.8;
 }
 
 /* 操作工具条 */
@@ -115,8 +117,7 @@ image.hui-image {
 
 .p_class {
   text-align: justify;
-  margin-bottom: 15rpx;
-  line-height: 1.5;
+  margin-bottom: 20rpx;
 }
 
 .img_class {
