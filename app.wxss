@@ -91,7 +91,6 @@ image.hui-image {
 /* Markdown 输出 */
 
 .hui-md-output {
-  font-size: 28rpx;
   color: #333;
 }
 
