@@ -3,7 +3,7 @@
   <view class='weui-cells'>
     <view bindtap='openMap' class='weui-cell weui-cell_access' hover-class='weui-cell_active'>
       <text class='weui-cell__bd'>地点: {{instance.fullAddress}}</text>
-      <text class='weui-cell__ft weui-cell__ft_in-access'></text>
+      <text class='weui-cell__ft weui-cell__ft_in-access' />
     </view>
     <view class='weui-cell'>
       <text class='weui-cell__bd'>类型: {{instance.category}}</text>
@@ -40,7 +40,7 @@
       <rich-text nodes='{{instance.content}}' />
     </view>
   </view>
-  <view class='hui-operation-vskip'></view>
+  <view class='hui-operation-vskip' />
   <view class='hui-operation'>
     <view class='hui-operation-item' bindtap='goHome'>
       <text>首页</text>

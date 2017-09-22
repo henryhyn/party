@@ -15,7 +15,7 @@
   <block wx:if='{{hasMore}}'>
     <block wx:if='{{loading}}'>
       <view class='weui-loadmore'>
-        <text class='weui-loading'></text>
+        <text class='weui-loading' />
         <text class='weui-loadmore__tips'>玩命加载中...</text>
       </view>
     </block>
