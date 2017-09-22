@@ -26,8 +26,12 @@ page {
   border-bottom: 1rpx solid #d9d9d9;
 }
 
+.hui-card-title {
+  margin-top: 10rpx;
+}
+
 .hui-info-item {
-  font-size: 20rpx;
+  font-size: 24rpx;
   color: #666;
   margin-right: 20rpx;
 }

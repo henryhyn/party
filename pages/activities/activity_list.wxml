@@ -2,7 +2,7 @@
   <block wx:for='{{list}}' wx:key='item.id'>
     <view class='hui-card' bindtap='show' data-id='{{item.id}}'>
       <image class='hui-image' src='{{item.cover}}' />
-      <view>
+      <view class='hui-card-title'>
         <text>{{item.title}}</text>
       </view>
       <view>
