@@ -1,6 +1,6 @@
 <scroll-view style='height: 100vh' scroll-y bindscrolltolower='nextPage'>
   <block wx:for='{{list}}' wx:key='item.id'>
-    <view class='hui-card' bindtap='show' data-id='{{item.id}}'>
+    <navigator url='activity_show?id={{item.id}}' class='hui-card'>
       <image class='hui-image' src='{{item.cover}}' />
       <view class='hui-card-title'>
         <text>{{item.title}}</text>
@@ -10,7 +10,7 @@
         <text class='hui-info-item'>预算: {{item.feeText}}</text>
         <text class='hui-info-item'>地点: {{item.fullAddress}}</text>
       </view>
-    </view>
+    </navigator>
   </block>
   <block wx:if='{{hasMore}}'>
     <block wx:if='{{loading}}'>

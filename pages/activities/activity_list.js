@@ -8,13 +8,6 @@ Page({
     list: []
   },
 
-  show: function (e) {
-    const ds = e.currentTarget.dataset;
-    wx.navigateTo({
-      url: `./activity_show?id=${ds.id}`
-    })
-  },
-
   nextPage: function () {
     if (this.data.loading || !this.data.hasMore) {
       return
