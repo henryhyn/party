@@ -45,8 +45,8 @@
     <view class='hui-operation-item' bindtap='goHome'>
       <text>首页</text>
     </view>
-    <view class='hui-operation-item' bindtap='addReview' data-id='{{instance.id}}'>
+    <navigator class='hui-operation-item' url='../reviews/review_form?id={{instance.id}}&source=activity'>
       <text>写点评</text>
-    </view>
+    </navigator>
   </view>
 </view>

@@ -15,12 +15,7 @@ Page({
       url: './activity_list'
     })
   },
-  addReview: function (e) {
-    const ds = e.currentTarget.dataset;
-    wx.navigateTo({
-      url: `../reviews/review_form?id=${ds.id}&source=activity`
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
