@@ -42,9 +42,9 @@
   </view>
   <view class='hui-operation-vskip' />
   <view class='hui-operation'>
-    <view class='hui-operation-item' bindtap='goHome'>
+    <navigator class='hui-operation-item' url='activity_list' open-type='redirect'>
       <text>首页</text>
-    </view>
+    </navigator>
     <navigator class='hui-operation-item' url='../reviews/review_form?id={{instance.id}}&source=activity'>
       <text>写点评</text>
     </navigator>
