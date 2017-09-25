@@ -5,9 +5,9 @@
   <view class='weui-cells'>
     <view class='weui-cell'>
       <view class='weui-cell__bd'>
-        <textarea class='weui-textarea' name='reviewBody' placeholder='亲, 这个活动攻略肿么样?' style='height: 8.3em' />
+        <textarea class='weui-textarea' name='reviewBody' placeholder='亲, 这个活动攻略肿么样?' style='height: 8.3em' bindinput='handleReviewBodyChange' />
         <view class='weui-textarea-counter'>
-          <text>0/200</text>
+          <text>{{reviewBody.length}}/200</text>
         </view>
       </view>
     </view>

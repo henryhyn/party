@@ -13,8 +13,14 @@ Page({
     userInfo: {},
     refId: null,
     biz: null,
+    reviewBody: '',
     tempFilePaths: []
   },
+
+  handleReviewBodyChange: function (e) {
+    this.setData({ reviewBody: e.detail.value })
+  },
+
   submit: function (e) {
     const { reviewBody } = e.detail.value
     const { userInfo, refId, biz, tempFilePaths } = this.data
