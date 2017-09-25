@@ -1,4 +1,5 @@
 import activities from '../../store/activities'
+import reviews from '../../store/reviews'
 
 Page({
 
@@ -6,6 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    reviewList: [],
     instance: {
       content: ''
     }
@@ -19,6 +21,16 @@ Page({
       id,
       cb: instance => {
         this.setData({ instance })
+      }
+    })
+
+    reviews.getListByPage({
+      biz: 'ACTIVITY',
+      refId: id,
+      cb: data => {
+        if (data.data) {
+          this.setData({ reviewList: data.data.list || [] })
+        }
       }
     })
   },
