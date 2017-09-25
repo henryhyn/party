@@ -11,24 +11,23 @@ Page({
   data: {
     submitting: false,
     userInfo: {},
-    outerId: null,
-    source: null,
+    refId: null,
+    biz: null,
     tempFilePaths: []
   },
   submit: function (e) {
     const { reviewBody } = e.detail.value
-    const { userInfo, outerId, source, tempFilePaths } = this.data
+    const { userInfo, refId, biz, tempFilePaths } = this.data
     const pictureKeys = []
     this.setData({ submitting: true })
-    Hex.uploadImage(tempFilePaths, pictureKeys, () => {
-      reviews.save({
-        userId: userInfo.id,
-        outerId,
-        source,
-        status: 10,
-        pictureKeys: pictureKeys.join(','),
-        reviewBody
-      }, d => {
+    reviews.save({
+      userId: userInfo.id,
+      refId,
+      biz,
+      status: 10,
+      reviewBody
+    }, d => {
+      Hex.uploadImage(tempFilePaths, d.data.id, `${biz}_REVIEW`, d => {
         this.setData({ submitting: false })
         wx.navigateBack()
       })
@@ -54,8 +53,8 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function ({ id: outerId, source }) {
-    app.getUserInfo(userInfo => this.setData({ outerId, source, userInfo }))
+  onLoad: function ({ refId, biz }) {
+    app.getUserInfo(userInfo => this.setData({ refId, biz, userInfo }))
   },
 
   /**

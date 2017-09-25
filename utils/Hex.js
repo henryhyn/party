@@ -11,7 +11,7 @@ Hex.validId = num => Hex.validAny(num) && num > 0;
 
 Hex.sum = array => (array || []).reduce((sum, val) => sum + val, 0)
 
-Hex.uploadImage = (filePaths, pictureKeys, cb) => {
+Hex.uploadImage = (filePaths, refId, biz, cb) => {
   if (filePaths.length === 0) {
     cb()
     return
@@ -21,9 +21,9 @@ Hex.uploadImage = (filePaths, pictureKeys, cb) => {
     url: `${Hex.domain}/api/images/upload`,
     filePath,
     name: 'fileData',
+    formData: { refId, biz },
     success: res => {
-      pictureKeys.push(JSON.parse(res.data).pictureKey)
-      Hex.uploadImage(filePaths, pictureKeys, cb)
+      Hex.uploadImage(filePaths, refId, biz, cb)
     }
   })
 }

@@ -45,7 +45,7 @@
     <navigator class='hui-operation-item' url='activity_list' open-type='redirect'>
       <text>首页</text>
     </navigator>
-    <navigator class='hui-operation-item' url='../reviews/review_form?id={{instance.id}}&source=activity'>
+    <navigator class='hui-operation-item' url='../reviews/review_form?refId={{instance.id}}&biz=ACTIVITY'>
       <text>写点评</text>
     </navigator>
   </view>
