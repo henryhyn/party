@@ -1,3 +1,5 @@
+import Hex from '../../utils/Hex'
+
 const app = getApp()
 
 Page({
@@ -12,20 +14,20 @@ Page({
     })
   },
 
-  onPullDownRefresh: function() {
-    this.login()
+  onPullDownRefresh: function () {
+    this.login(wx.stopPullDownRefresh)
   },
 
   onLoad: function () {
     this.login()
   },
 
-  login: function () {
+  login: function (cb = Hex.empty) {
     app.getUserInfo(data => {
       this.setData({
         userInfo: data,
         hasUserInfo: true
-      })
+      }, cb)
     })
   }
 })
