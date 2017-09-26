@@ -99,7 +99,7 @@ Page({
 
     reviews.getListByPage({
       biz: 'ACTIVITY',
-      refId: id,
+      refId: this.data.instance.id,
       cb: data => {
         if (data.data) {
           this.setData({ reviewList: data.data.list || [] })
