@@ -96,6 +96,16 @@ Page({
         wx.stopPullDownRefresh()
       }
     })
+
+    reviews.getListByPage({
+      biz: 'ACTIVITY',
+      refId: id,
+      cb: data => {
+        if (data.data) {
+          this.setData({ reviewList: data.data.list || [] })
+        }
+      }
+    })
   },
 
   /**
