@@ -52,6 +52,11 @@ Page({
     })
   },
 
+  previewImage: function (e) {
+    const { urls, current } = e.currentTarget.dataset;
+    wx.previewImage({ urls, current })
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

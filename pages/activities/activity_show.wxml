@@ -40,7 +40,7 @@
       <rich-text nodes='{{instance.content}}' />
     </view>
   </view>
-  <view class='hui-panel'>
+  <view class='hui-panel' wx:if='{{reviewList && reviewList.length>0}}'>
     <view class='hui-panel-title'>
       <text class='hui-panel-title__bd'>网友评论</text>
     </view>
@@ -53,8 +53,8 @@
           <view class="hui-media-box__bd">
             <view class="weui-media-box__title">{{item.user.nickName}}</view>
             <view class="weui-media-box__desc">{{item.reviewBody}}</view>
-            <block wx:for='{{item.pictures}}' wx:key='item'>
-              <image class='hui-thumbnail' src='{{item}}' />
+            <block wx:for='{{item.pictures}}' wx:for-item='i' wx:key='i'>
+              <image class='hui-thumbnail' src='{{i}}' bindtap='previewImage' data-urls='{{item.pictures}}' data-current='{{i}}' />
             </block>
           </view>
         </view>
