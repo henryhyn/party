@@ -1,5 +1,7 @@
 @import 'weui.wxss';
 @import 'weui_fix.wxss';
+@import 'zanui/index.wxss';
+@import 'zanui_fix.wxss';
 
 page {
   color: #333;
@@ -99,6 +101,39 @@ page {
 image.hui-image {
   width: 100%;
   display: block;
+}
+
+.hui-thumbnail {
+  width: 180rpx;
+  height: 180rpx;
+  margin-top: 10rpx;
+  margin-right: 10rpx;
+}
+
+/* media box */
+
+.hui-media-box {
+  display: flex;
+}
+
+.hui-media-box + .hui-media-box {
+  border-top: 1rpx solid #d9d9d9;
+  padding-top: 20rpx;
+  margin-top: 20rpx;
+}
+
+.hui-media-box__hd {
+  width: 90rpx;
+  margin-right: 10rpx;
+}
+
+.hui-media-box__thumb {
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.hui-media-box__bd {
+  flex: 1;
 }
 
 /* 表单 */

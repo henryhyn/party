@@ -34,7 +34,6 @@ Page({
 
     this.setData({ loading: true })
     activities.getListByPage({
-      page: 1,
       cb: ({ page, list, hasMore }) => {
         this.setData({
           page,
@@ -53,7 +52,6 @@ Page({
 
     this.setData({ loading: true })
     activities.getListByPage({
-      page: 1,
       cb: ({ page, list, hasMore }) => {
         this.setData({
           page,

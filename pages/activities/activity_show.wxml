@@ -40,15 +40,22 @@
       <rich-text nodes='{{instance.content}}' />
     </view>
   </view>
-  <view class="weui-panel">
-    <view class="weui-panel__bd">
+  <view class='hui-panel'>
+    <view class='hui-panel-title'>
+      <text class='hui-panel-title__bd'>网友评论</text>
+    </view>
+    <view class='hui-panel-body'>
       <block wx:for='{{reviewList}}' wx:key='item.id'>
-        <view class="weui-media-box weui-media-box_appmsg">
-          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-            <image class="weui-media-box__thumb" src="{{item.user.avatarUrl}}" />
+        <view class="hui-media-box">
+          <view class="hui-media-box__hd">
+            <image class="hui-media-box__thumb" src="{{item.user.avatarUrl}}" />
           </view>
-          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="hui-media-box__bd">
+            <view class="weui-media-box__title">{{item.user.nickName}}</view>
             <view class="weui-media-box__desc">{{item.reviewBody}}</view>
+            <block wx:for='{{item.pictures}}' wx:key='item'>
+              <image class='hui-thumbnail' src='{{item}}' />
+            </block>
           </view>
         </view>
       </block>
