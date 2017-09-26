@@ -10,7 +10,7 @@ App({
 
   getUserInfo: function (cb) {
     this.globalData.userInfo = wx.getStorageSync('userInfo')
-    if (this.globalData.userInfo) {
+    if (this.globalData.userInfo && this.globalData.userInfo.id) {
       typeof cb == "function" && cb(this.globalData.userInfo)
     } else {
       // 登录

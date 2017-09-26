@@ -12,6 +12,10 @@ Page({
     })
   },
 
+  onPullDownRefresh: function() {
+    this.login()
+  },
+
   onLoad: function () {
     this.login()
   },
