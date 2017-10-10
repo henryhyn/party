@@ -391,14 +391,14 @@ image.hui-image {
 }
 
 .hui-media-hd {
-  width: 100rpx;
-  height: 100rpx;
+  width: 96rpx;
+  height: 96rpx;
   margin-right: 20rpx;
 }
 
 .hui-media-hd image {
-  width: 100rpx;
-  height: 100rpx;
+  width: 96rpx;
+  height: 96rpx;
 }
 
 .hui-media-bd {
