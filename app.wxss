@@ -1,7 +1,4 @@
-@import 'weui.wxss';
-@import 'weui_fix.wxss';
-@import 'zanui/index.wxss';
-@import 'zanui_fix.wxss';
+@import 'hui/hui.wxss';
 
 page {
   color: #333;

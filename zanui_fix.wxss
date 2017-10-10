@@ -1,6 +1,0 @@
-.zan-panel-body {
-  padding-top: 20rpx;
-  padding-bottom: 20rpx;
-  padding-left: 30rpx;
-  padding-right: 30rpx;
-}
