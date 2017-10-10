@@ -23,28 +23,36 @@
       </view>
     </view>
   </view>
-  <view class='hui-panel'>
-    <view class='hui-panel-title' bindtap='openRoute' data-id='{{instance.id}}'>
-      <text class='hui-panel-title__bd'>活动路线</text>
-      <text class='hui-panel-title__ft weui-cell__ft_in-access' wx:if='{{instance.length && instance.length>0}}'>{{instance.length}} 公里</text>
+  <view class='hui-block'>
+    <view class='hui-cell hui-panel-hd hui-cell-access' bindtap='openRoute' data-id='{{instance.id}}'>
+      <view class='hui-cell-bd'>
+        <text>活动路线</text>
+      </view>
+      <view class='hui-cell-ft' wx:if='{{instance.length && instance.length>0}}'>
+        <text>{{instance.length}} 公里</text>
+      </view>
     </view>
-    <view class='hui-panel-body'>
+    <view class='hui-panel-bd'>
       <text>{{instance.route}}</text>
     </view>
   </view>
-  <view class='hui-panel'>
-    <view class='hui-panel-title'>
-      <text class='hui-panel-title__bd'>活动简介</text>
+  <view class='hui-block'>
+    <view class='hui-cell hui-panel-hd'>
+      <view class='hui-cell-bd'>
+        <text>活动简介</text>
+      </view>
     </view>
-    <view class='hui-panel-body'>
+    <view class='hui-panel-bd'>
       <text>{{instance.summary}}</text>
     </view>
   </view>
-  <view class='hui-panel'>
-    <view class='hui-panel-title'>
-      <text class='hui-panel-title__bd'>活动详情</text>
+  <view class='hui-block'>
+    <view class='hui-cell hui-panel-hd'>
+      <view class='hui-cell-bd'>
+        <text>活动详情</text>
+      </view>
     </view>
-    <view class='hui-panel-body'>
+    <view class='hui-panel-bd'>
       <rich-text nodes='{{instance.content}}' />
     </view>
   </view>
