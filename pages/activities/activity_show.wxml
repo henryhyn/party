@@ -56,25 +56,27 @@
       <rich-text nodes='{{instance.content}}' />
     </view>
   </view>
-  <view class='hui-panel' wx:if='{{reviewList && reviewList.length>0}}'>
-    <view class='hui-panel-title'>
-      <text class='hui-panel-title__bd'>网友评论</text>
+  <view class='hui-block' wx:if='{{reviewList && reviewList.length>0}}'>
+    <view class='hui-cell hui-panel-hd'>
+      <view class='hui-cell-bd'>
+        <text>网友评论</text>
+      </view>
     </view>
-    <view class='hui-panel-body'>
-      <block wx:for='{{reviewList}}' wx:key='item.id'>
-        <view class="hui-media-box">
-          <view class="hui-media-box__hd">
-            <image class="hui-media-box__thumb" src="{{item.user.avatarUrl}}" />
-          </view>
-          <view class="hui-media-box__bd">
-            <view class="weui-media-box__title">{{item.user.nickName}}</view>
-            <view class="weui-media-box__desc">{{item.reviewBody}}</view>
-            <block wx:for='{{item.pictures}}' wx:for-item='i' wx:key='i'>
-              <image class='hui-thumbnail' src='{{i}}' bindtap='previewImage' data-urls='{{item.pictures}}' data-current='{{i}}' />
-            </block>
-          </view>
+    <view class='hui-media' wx:for='{{reviewList}}' wx:key='item.id'>
+      <view class='hui-media-hd'>
+        <image class='hui-image' src='{{item.user.avatarUrl}}' />
+      </view>
+      <view class='hui-media-bd'>
+        <view class='hui-media-bd-title'>
+          <text>{{item.user.nickName}}</text>
         </view>
-      </block>
+        <view class='hui-media-bd-desc'>
+          <text>{{item.reviewBody}}</text>
+        </view>
+        <block wx:for='{{item.pictures}}' wx:for-item='i' wx:key='i'>
+          <image class='hui-thumbnail' src='{{i}}' bindtap='previewImage' data-urls='{{item.pictures}}' data-current='{{i}}' />
+        </block>
+      </view>
     </view>
   </view>
   <view class='hui-operation-vskip' />
