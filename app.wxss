@@ -1,3 +1,5 @@
+@import 'weui.wxss';
+@import 'weui_fix.wxss';
 @import 'hui/hui.wxss';
 
 page {

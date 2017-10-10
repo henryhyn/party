@@ -233,6 +233,8 @@
 }
 
 .hui-block {
+  display: block;
+  overflow: auto;
   background-color: white;
   margin-top: 30rpx;
   position: relative;
@@ -262,6 +264,13 @@
 
 .hui-space {
   margin-right: 10rpx;
+}
+
+/* 表单 */
+
+form.hui-form {
+  display: block;
+  overflow: auto;
 }
 
 /* 限制行数 */
