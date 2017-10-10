@@ -262,8 +262,14 @@
   content: ' ';
 }
 
+/* 空白 */
+
 .hui-space {
   margin-right: 10rpx;
+}
+
+.hui-vskip {
+  margin-top: 30rpx !important;
 }
 
 /* 表单 */

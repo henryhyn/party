@@ -38,10 +38,3 @@
   width: 206rpx;
   height: 206rpx;
 }
-
-.weui-btn-area {
-  margin-top: 30rpx;
-  margin-left: 30rpx;
-  margin-right: 30rpx;
-  margin-bottom: 0;
-}
