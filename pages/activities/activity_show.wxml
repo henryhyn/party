@@ -24,7 +24,7 @@
     </view>
   </view>
   <view class='hui-block'>
-    <view class='hui-cell hui-panel-hd hui-cell-access' bindtap='openRoute' data-id='{{instance.id}}'>
+    <view class='hui-cell hui-panel-hd hui-cell-access' hover-class='navigator-hover' bindtap='openRoute' data-id='{{instance.id}}'>
       <view class='hui-cell-bd'>
         <text>活动路线</text>
       </view>

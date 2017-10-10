@@ -257,13 +257,44 @@
   content: ' ';
 }
 
+.hui-space {
+  margin-right: 10rpx;
+}
+
+/* 缩略图 */
+
 image.hui-image {
+  width: 100%;
   display: block;
 }
 
-.hui-space {
-  margin-right: 10rpx;
-}.hui-loadmore {
+/* Markdown 输出 */
+
+.h2_class {
+  margin-top: 40rpx;
+  margin-bottom: 30rpx;
+}
+
+.h3_class {
+  margin-top: 30rpx;
+  margin-bottom: 25rpx;
+}
+
+.h4_class {
+  margin-top: 25rpx;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+
+.p_class {
+  text-align: justify;
+  margin-bottom: 20rpx;
+}
+
+.img_class {
+  max-width: 100%;
+}
+.hui-loadmore {
   font-size: small;
   color: #666;
   text-align: center;
