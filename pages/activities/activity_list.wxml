@@ -2,15 +2,17 @@
 
 <scroll-view style='height: 100vh' scroll-y bindscrolltolower='nextPage'>
   <block wx:for='{{list}}' wx:key='item.id'>
-    <navigator url='activity_show?id={{item.id}}' class='hui-card'>
+    <navigator url='activity_show?id={{item.id}}' class='hui-block'>
       <image class='hui-image' src='{{item.cover}}' />
-      <view class='hui-card-title'>
-        <text>{{item.title}}</text>
-      </view>
-      <view>
-        <text class='hui-info-item'>类型: {{item.category}}</text>
-        <text class='hui-info-item'>预算: {{item.feeText}}</text>
-        <text class='hui-info-item'>地点: {{item.fullAddress}}</text>
+      <view class='hui-card-bd'>
+        <view>
+          <text>{{item.title}}</text>
+        </view>
+        <view class='hui-ellipsis'>
+          <text class='hui-info-item'>类型: {{item.category}}</text>
+          <text class='hui-info-item'>预算: {{item.feeText}}</text>
+          <text class='hui-info-item'>地点: {{item.fullAddress}}</text>
+        </view>
       </view>
     </navigator>
   </block>

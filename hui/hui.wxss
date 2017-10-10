@@ -18,6 +18,9 @@
 .hui-btn-area {
   margin: 20rpx 30rpx;
 }
+.hui-card-bd {
+  padding: 20rpx 30rpx;
+}
 .hui-cell {
   position: relative;
   display: flex;
@@ -259,6 +262,23 @@
 
 .hui-space {
   margin-right: 10rpx;
+}
+
+/* 限制行数 */
+
+.hui-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+/* info inline list */
+
+.hui-info-item {
+  font-size: small;
+  color: #666;
+  margin-right: 20rpx;
 }
 
 /* 缩略图 */
