@@ -235,6 +235,10 @@
   position: relative;
 }
 
+.hui-block-title {
+  margin-top: 0;
+}
+
 .hui-block::before {
   position: absolute;
   left: 0;

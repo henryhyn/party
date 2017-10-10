@@ -1,9 +1,6 @@
 @import 'hui/hui.wxss';
 
 page {
-  color: #333;
-  font-size: 34rpx;
-  line-height: 1.41176471;
   background-color: #f8f8f8;
 }
 
