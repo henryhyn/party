@@ -70,6 +70,18 @@
   border-style: solid;
   transform: translateY(-50%) matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
 }
+.hui-b-red {
+  background-color: #f44;
+}
+
+.hui-b-blue {
+  background-color: #3283fa;
+}
+
+.hui-b-green {
+  background-color: #4b0;
+}
+
 .hui-c-red {
   color: #f44 !important;
 }
@@ -266,6 +278,14 @@
   border-radius: 10rpx;
 }
 
+.hui-flex {
+  flex: 1;
+}
+
+.hui-flex2 {
+  flex: 2;
+}
+
 /* 空白 */
 
 .hui-space {
@@ -304,7 +324,6 @@ form.hui-form {
 
 .hui-operation {
   background-color: #f7f7fa;
-  border-top: 1rpx solid #ceced1;
   position: fixed;
   left: 0;
   right: 0;
@@ -312,10 +331,18 @@ form.hui-form {
   display: flex;
 }
 
+.hui-operation::before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-top: 1rpx solid #e5e5e5;
+  content: ' ';
+}
+
 .hui-operation-item {
-  padding: 30rpx;
+  padding: 24rpx 30rpx;
   text-align: center;
-  flex: 1;
 }
 
 .hui-operation-vskip {

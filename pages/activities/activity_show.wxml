@@ -81,10 +81,11 @@
   </view>
   <view class='hui-operation-vskip' />
   <view class='hui-operation'>
-    <navigator class='hui-operation-item' url='activity_list' open-type='switchTab'>
-      <text>首页</text>
+    <navigator class='hui-operation-item hui-flex hui-b-red' url='activity_list' open-type='switchTab'>
+      <text class='hui-icon hui-icon-home' />
     </navigator>
-    <navigator class='hui-operation-item' url='../reviews/review_form?refId={{instance.id}}&biz=ACTIVITY'>
+    <navigator class='hui-operation-item hui-flex2' url='../reviews/review_form?refId={{instance.id}}&biz=ACTIVITY'>
+      <text class='hui-icon hui-icon-message hui-space' />
       <text>写点评</text>
     </navigator>
   </view>
