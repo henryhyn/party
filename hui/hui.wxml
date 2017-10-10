@@ -16,7 +16,7 @@
 </template><template name='loadmore'>
   <block wx:if='{{nomore}}'>
     <view class='hui-loadmore'>
-      <text>没有更多啦</text>
+      <text>没有更多啦~~~</text>
     </view>
   </block>
 

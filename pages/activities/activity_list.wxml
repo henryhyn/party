@@ -1,3 +1,5 @@
+<import src='../../hui/hui.wxml' />
+
 <scroll-view style='height: 100vh' scroll-y bindscrolltolower='nextPage'>
   <block wx:for='{{list}}' wx:key='item.id'>
     <navigator url='activity_show?id={{item.id}}' class='hui-card'>
@@ -14,15 +16,10 @@
   </block>
   <block wx:if='{{hasMore}}'>
     <block wx:if='{{loading}}'>
-      <view class='weui-loadmore'>
-        <text class='weui-loading' />
-        <text class='weui-loadmore__tips'>玩命加载中...</text>
-      </view>
+      <template is='loadmore' data='{{loading: true}}' />
     </block>
   </block>
   <block wx:else>
-    <view class='weui-loadmore'>
-      <text class='weui-loadmore__tips'>没有更多啦~~~</text>
-    </view>
+    <template is='loadmore' data='{{nomore: true}}' />
   </block>
 </scroll-view>
